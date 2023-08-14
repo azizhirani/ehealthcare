@@ -1,0 +1,1110 @@
+<!doctype html>
+<html lang="en-US">
+
+
+<!-- Mirrored from themes.propeller.in/bootstrap4/html/e-health-care-admin-theme/dashboard.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 14 Aug 2023 07:48:19 GMT -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+    <title>e-Health Care Admin HTML Theme - Dashboard Template</title>
+    <meta name="description" content="Dashboard Template. e-Health Care Admin Theme is a multipurpose and fully responsive Bootstrap 4 and Material Design based Admin HTML Template by Propeller designed mainly for Clinics, Hospitals, Dentists and more such applications related to health care." />
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico">
+
+    <!-- Google icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Rubik and Open sans Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700|Open+Sans:300,400,600,700"
+        rel="stylesheet">
+
+    <!-- build:remove -->
+    <!-- e-Health Care Admin Theme CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/ehealthcare-admin-compress.min.css">
+    <!-- /build -->
+
+    <!-- build:include snippets/css-files-index.html -->
+    <!-- /build -->
+
+    <!-- build:remove -->
+    <!--Google Analytics code-->
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script',
+            '../bootstrap4-admin-theme/assets/js/analytics.js', 'ga');
+
+        ga('create', 'UA-124615-22', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+    <!-- Canonical Tag -->
+    <link rel="canonical" href="dashboard.html" />
+    <!-- /build -->
+
+</head>
+
+<body>
+
+    <!----------------------------
+		Navbar
+ 	----------------------------->
+    <nav class="navbar navbar-expand-xl fixed-top navbar-light bg-white pmd-navbar pmd-z-depth-light-2">
+        <a href="javascript:void(0);" data-target="basicSidebar" data-placement="left" data-position="slidepush"
+            is-open="true" is-open-width="1300"
+            class="btn btn-sm pmd-btn-fab pmd-btn-flat pmd-ripple-effect pmd-sidebar-toggle humburger-menu">
+            <i class="material-icons md-dark md-inactive">menu</i>
+        </a>
+
+        <!-- Navbar Logo for Responsive view -->
+        <div class="navbar-header hide-large-desk p-0">
+            <a class="navbar-brand navbar-custom-brand" href="dashboard.html">
+                <img src="assets/images/logo.png" alt="Logo" class="img-fluid" width="120">
+            </a>
+        </div>
+
+        <!-- Page Title for Desktop View -->
+        <div class="show-large-desk">
+            <h1 class="h2 mb-0">Dashboard</h1>
+        </div>
+
+        <!-- Right Side Menu -->
+        <div class="pmd-navbar-right-icon ml-auto">
+
+            <!-- Global Search Field -->
+            <div class="nav-item d-inline-block global-search">
+                <a class="btn btn-sm pmd-btn-fab pmd-btn-flat search-form-open" href="javascript:void(0);">
+                    <i class="material-icons md-dark md-inactive">search</i>
+                </a>
+                <form class="search-form" method="POST" id="searchform" action="https://themes.propeller.in/bootstrap4/html/e-health-care-admin-theme/search-results.html">
+                    <div class="form-group pmd-textfield mb-0 pmd-textfield-outline">
+                        <input type="text" class="form-control pr-5" id="globalSearch" aria-describedby="globalSearch"
+                            placeholder="Search & Enter">
+                        <a class="btn btn-sm pmd-btn-fab pmd-btn-flat search-form-close" href="javascript:void(0);">
+                            <i class="material-icons md-dark md-inactive">close</i>
+                        </a>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Email Dropdown -->
+            <div class="nav-item d-inline-block dropdown pmd-dropdown">
+                <a href="javascript:void(0);" class="btn btn-sm pmd-btn-fab pmd-btn-flat" id="emailDropdown"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Emails">
+                    <i data-badge="5"
+                        class="material-icons pmd-badge pmd-badge-overlap pmd-badge-secondary md-dark md-inactive pmd-sm">
+                        mail_outline
+                    </i>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right notifications-dropdown" aria-labelledby="emailDropdown">
+                    <div class="card pmd-card mb-0">
+                        <div class="card-header d-flex w-100 justify-content-between pmd-card-border">
+                            <h3 class="pmd-list-title mb-0">Emails</h3>
+                            <a href="javascript:void(0);" class="text-secondary small">2 New Emails</a>
+                        </div>
+                        <div class="list-group pmd-list pmd-list-border m-0">
+                            <a class="list-group-item d-block unread" href="javascript:void(0);">
+                                <div class="media">
+                                    <span class="pmd-avatar-list-img">
+                                        <img alt="Profile Picture" data-src="holder.js/40x40" class="img-fluid"
+                                            src="assets/images/profile-1.jpg" data-holder-rendered="true">
+                                    </span>
+                                    <div class="media-body">
+                                        <h5 class="pmd-list-title">Brian Young</h5>
+                                        <p class="small text-dark mb-0">Desktop Application developer expert</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="list-group-item d-block unread" href="javascript:void(0);">
+                                <div class="media">
+                                    <span class="pmd-avatar-list-img">
+                                        <img alt="Profile Picture" data-src="holder.js/40x40" class="img-fluid"
+                                            src="assets/images/profile-2.jpg" data-holder-rendered="true">
+                                    </span>
+                                    <div class="media-body">
+                                        <h5 class="pmd-list-title">Diana Harris</h5>
+                                        <p class="small text-dark mb-0">Website speed issues</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="list-group-item d-block" href="javascript:void(0);">
+                                <div class="media">
+                                    <span class="pmd-avatar-list-img">
+                                        <img alt="Profile Picture" data-src="holder.js/40x40" class="img-fluid"
+                                            src="assets/images/profile-3.jpg" data-holder-rendered="true">
+                                    </span>
+                                    <div class="media-body">
+                                        <h5 class="pmd-list-title">Phillip Turner</h5>
+                                        <p class="small text-dark mb-0">Website Image Optimization</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="list-group-item d-block" href="javascript:void(0);">
+                                <div class="media">
+                                    <span class="pmd-avatar-list-img">
+                                        <img alt="Profile Picture" data-src="holder.js/40x40" class="img-fluid"
+                                            src="assets/images/profile-4.jpg" data-holder-rendered="true">
+                                    </span>
+                                    <div class="media-body">
+                                        <h5 class="pmd-list-title">Harold Harris</h5>
+                                        <p class="small text-dark mb-0">Large size image loading issue</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="list-group-item d-block" href="javascript:void(0);">
+                                <div class="media">
+                                    <span class="pmd-avatar-list-img">
+                                        <img alt="Profile Picture" data-src="holder.js/40x40" class="img-fluid"
+                                            src="assets/images/profile-5.jpg" data-holder-rendered="true">
+                                    </span>
+                                    <div class="media-body">
+                                        <h5 class="pmd-list-title">Rachel Freeman</h5>
+                                        <p class="small text-dark mb-0">Add new feature in Calendar</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="list-group-item d-block" href="javascript:void(0);">
+                                <div class="media">
+                                    <span class="pmd-avatar-list-img">
+                                        <img alt="Profile Picture" data-src="holder.js/40x40" class="img-fluid"
+                                            src="assets/images/profile-6.jpg" data-holder-rendered="true">
+                                    </span>
+                                    <div class="media-body">
+                                        <h5 class="pmd-list-title">John Smith</h5>
+                                        <p class="small text-dark mb-0">Add more color options in themes</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <a href="mailbox.html" class="btn btn-secondary pmd-ripple-effect pmd-btn-flat view-all">View
+                            All</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Notification Dropdown -->
+            <div class="nav-item dropdown pmd-dropdown d-inline-block">
+                <a class="btn btn-sm pmd-btn-fab pmd-btn-flat" href="javascript:void(0);" id="notificationDropdown"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Notifications">
+                    <i data-badge="3"
+                        class="material-icons pmd-badge pmd-badge-overlap pmd-badge-secondary md-dark md-inactive pmd-sm">notifications_none</i>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right notifications-dropdown"
+                    aria-labelledby="notificationDropdown">
+                    <div class="card pmd-card mb-0">
+                        <div class="card-header d-flex w-100 justify-content-between pmd-card-border">
+                            <h3 class="pmd-list-title mb-0">Notifications</h3>
+                            <a href="javascript:void(0);" class="text-secondary small">2 New Notifications</a>
+                        </div>
+                        <div class="list-group pmd-list pmd-list-border m-0">
+                            <a class="list-group-item d-block unread" href="javascript:void(0);">
+                                <div class="media">
+                                    <span class="pmd-avatar-list-img">
+                                        <img alt="Profile Picture" data-src="holder.js/40x40" class="img-fluid"
+                                            src="assets/images/profile-1.jpg" data-holder-rendered="true">
+                                    </span>
+                                    <div class="media-body">
+                                        <h5 class="pmd-list-title"><strong>Robert Oliver</strong> applied for appointment on 10<sup>th</sup> May 2019 11:00AM.</h5>
+                                        <p class="small text-dark mb-0">5 Minutes ago</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="list-group-item d-block unread" href="javascript:void(0);">
+                                <div class="media">
+                                    <span class="pmd-avatar-list-img">
+                                        <img alt="Profile Picture" data-src="holder.js/40x40" class="img-fluid"
+                                            src="assets/images/profile-2.jpg" data-holder-rendered="true">
+                                    </span>
+                                    <div class="media-body">
+                                        <h5 class="pmd-list-title"><strong>Andrea Cole</strong> discharged from treatment yesterday.</h5>
+                                        <p class="small text-dark mb-0">15 Minutes ago</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="list-group-item d-block" href="javascript:void(0);">
+                                <div class="media">
+                                    <span class="pmd-avatar-list-img">
+                                        <img alt="Profile Picture" data-src="holder.js/40x40" class="img-fluid"
+                                            src="assets/images/profile-3.jpg" data-holder-rendered="true">
+                                    </span>
+                                    <div class="media-body">
+                                        <h5 class="pmd-list-title"><strong>Scott Mason</strong> applied for appointment on 13<sup>th</sup> May 2019 12:00PM.</h5>
+                                        <p class="small text-dark mb-0">25 Minutes ago</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="list-group-item d-block" href="javascript:void(0);">
+                                <div class="media">
+                                    <span class="pmd-avatar-list-img">
+                                        <img alt="Profile Picture" data-src="holder.js/40x40" class="img-fluid"
+                                            src="assets/images/profile-4.jpg" data-holder-rendered="true">
+                                    </span>
+                                    <div class="media-body">
+                                        <h5 class="pmd-list-title"><strong>Frank Thomas</strong> admitted for operation in ward no. 21.
+                                        </h5>
+                                        <p class="small text-dark mb-0">15 Minutes ago</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="list-group-item d-block" href="javascript:void(0);">
+                                <div class="media">
+                                    <span class="pmd-avatar-list-img">
+                                        <img alt="Profile Picture" data-src="holder.js/40x40" class="img-fluid"
+                                            src="assets/images/profile-5.jpg" data-holder-rendered="true">
+                                    </span>
+                                    <div class="media-body">
+                                        <h5 class="pmd-list-title"><strong>Mary Chavez</strong> came for routine checkup.
+                                        </h5>
+                                        <p class="small text-dark mb-0">15 Minutes ago</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="list-group-item d-block" href="javascript:void(0);">
+                                <div class="media">
+                                    <span class="pmd-avatar-list-img">
+                                        <img alt="Profile Picture" data-src="holder.js/40x40" class="img-fluid"
+                                            src="assets/images/profile-6.jpg" data-holder-rendered="true">
+                                    </span>
+                                    <div class="media-body">
+                                        <h5 class="pmd-list-title"><strong>Tyler Wood</strong> joined in Cardiology Department.</h5>
+                                        <p class="small text-dark mb-0">25 Minutes ago</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="list-group-item d-block" href="javascript:void(0);">
+                                <div class="media">
+                                    <span class="pmd-avatar-list-img">
+                                        <img alt="Profile Picture" data-src="holder.js/40x40" class="img-fluid"
+                                            src="assets/images/profile-7.jpg" data-holder-rendered="true">
+                                    </span>
+                                    <div class="media-body">
+                                        <h5 class="pmd-list-title"><strong>Ruth Fields</strong> applied for appointment on 12<sup>th</sup> May 2019 4:00PM.</h5>
+                                        <p class="small text-dark mb-0">15 Minutes ago</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="list-group-item d-block" href="javascript:void(0);">
+                                <div class="media">
+                                    <span class="pmd-avatar-list-img">
+                                        <img alt="Profile Picture" data-src="holder.js/40x40" class="img-fluid"
+                                            src="assets/images/profile-8.jpg" data-holder-rendered="true">
+                                    </span>
+                                    <div class="media-body">
+                                        <h5 class="pmd-list-title"><strong>Martha Jhon</strong> applied for appointment on 10<sup>th</sup> May2019 12:00PM.</h5>
+                                        <p class="small text-dark mb-0">15 Minutes ago</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <a href="notifications.html"
+                            class="btn btn-secondary pmd-ripple-effect pmd-btn-flat view-all">View
+                            All</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- User Info Dropdown  -->
+            <div class="nav-item dropdown pmd-dropdown d-none d-md-inline-block">
+                <a class="btn btn-sm pmd-btn-flat" href="javascript:void(0);" id="userProfileDropdown"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <div class="media align-items-center">
+                        <div class="media-left">
+                            <img src="assets/images/profile-1.jpg" alt="Admin Picture"
+                                class="pmd-icon-circle pmd-icon-xs mr-2">
+                        </div>
+                        <div class="media-body">
+                            <b class="d-inline-flex mr-2 text-dark">Admin</b>
+                        </div>
+                        <div class="media-right">
+                            <i class="material-icons md-18 md-inactive md-dark">expand_more</i>
+                        </div>
+                    </div>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right notifications-dropdown user-profile-dropdown"
+                    aria-labelledby="userProfileDropdown">
+                    <div class="card pmd-card mb-0">
+                        <div class="list-group pmd-list pmd-list-border m-0">
+
+                            <a class="d-flex flex-row list-group-item text-dark" href="settings.html">
+                                <i class="material-icons pmd-xs mr-2">settings</i>
+                                <span class="media-body align-self-center">Settings</span>
+                            </a>
+                            <a class="d-flex flex-row list-group-item text-dark" href="faqs.html">
+                                <i class="material-icons pmd-xs mr-2">help</i>
+                                <span class="media-body align-self-center">FAQs</span>
+                            </a>
+                            <a class="d-flex flex-row list-group-item text-danger" href="login.html">
+                                <i class="material-icons pmd-xs mr-2">logout</i>
+                                <span class="media-body align-self-center">Logout</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Right Side Menu -->
+
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Sidebar overlay -->
+    <div class="pmd-sidebar-overlay"></div>
+
+    <!----------------------------
+		Left Sidebar
+ 	----------------------------->
+    <aside id="basicSidebar"
+        class="pmd-sidebar pmd-sidebar-dark bg-primary pmd-sidebar-slide-push pmd-sidebar-open  pmd-z-depth-light-2"
+        role="navigation">
+        <div class="navbar-header fixed-top">
+            <!-- Navbar Logo for Desktop view -->
+            <a class="navbar-brand navbar-custom-brand d-none d-md-block" href="dashboard.html">
+                <img src="assets/images/logo-white.png" alt="Logo" class="img-fluid" width="172">
+            </a>
+            <!-- User Info For Responsive View -->
+            <div class="pmd-user-info d-block d-md-none text-center">
+                <a href="javascript:void(0);" class="btn-user">
+                    <img class="rounded-circle" src="assets/images/profile-1.jpg" width="56" height="56" alt="avatar">
+                    <h3 class="pmd-title m-0 text-white">Admin</h3>
+                </a>
+            </div>
+        </div>
+
+        <!-- Accordian Menu -->
+        <ul class="nav flex-column pmd-sidebar-nav">
+            <li class="nav-item ">
+                <a class="nav-link active pmd-ripple-effect" href="dashboard.html">
+                    <i class="material-icons pmd-list-icon pmd-sm md-light">home</i>
+                    <span class="media-body">Dashboard</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" data-toggle="collapse" href="#department-menu">
+                    <i class="material-icons pmd-list-icon pmd-sm md-light">location_city</i>
+                    <span class="media-body">Departments</span>
+                    <div class="media-right media-bottom">
+                        <i class="material-icons md-18 pmd-accordion-arrow">expand_more</i>
+                    </div>
+                </a>
+                <!-- Submenu -->
+                <ul class="collapse" id="department-menu" data-parent="#basicSidebar" aria-expanded="false">
+                    <li class="nav-item">
+                        <a class="nav-link" href="department-list.html">Department Types</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="department-detail.html">Department Details</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="department-blank-state.html">Department Blank State</a>
+                    </li>
+                </ul>
+                <!-- End Submenu -->
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" data-toggle="collapse" href="#doctor-menu">
+                    <i class="material-icons pmd-list-icon pmd-sm md-light">enhanced_encryption</i>
+                    <span class="media-body">Doctors</span>
+                    <div class="media-right media-bottom">
+                        <i class="material-icons md-18 pmd-accordion-arrow">expand_more</i>
+                    </div>
+                </a>
+                <!-- Submenu -->
+                <ul class="collapse" id="doctor-menu" data-parent="#basicSidebar" aria-expanded="false">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="doctor-list.html">Doctor List</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="doctor-add.html">Add Doctor</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="doctor-detail.html">Doctor Detail</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="doctor-blank-state.html">Doctor Blank State</a>
+                    </li>
+                </ul>
+                <!-- End Submenu -->
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" data-toggle="collapse" href="#patient-menu">
+                    <i class="material-icons pmd-list-icon pmd-sm md-light">airline_seat_recline_normal</i>
+                    <span class="media-body">Patients</span>
+                    <div class="media-right media-bottom">
+                        <i class="material-icons md-18 pmd-accordion-arrow">expand_more</i>
+                    </div>
+                </a>
+                <!-- Submenu -->
+                <ul class="collapse" id="patient-menu" data-parent="#basicSidebar" aria-expanded="false">
+                    <li class="nav-item">
+                        <a class="nav-link" href="patient-list.html">Patient List</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="patient-add.html">Add Patient</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="patient-detail.html">Patient Detail</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="patient-blank-state.html">Patient Blank State</a>
+                    </li>
+                </ul>
+                <!-- End Submenu -->
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" data-toggle="collapse" href="#schedule-menu">
+                    <i class="material-icons pmd-list-icon pmd-sm md-light">event</i>
+                    <span class="media-body">Appointments</span>
+                    <div class="media-right media-bottom">
+                        <i class="material-icons md-18 pmd-accordion-arrow">expand_more</i>
+                    </div>
+                </a>
+                <!-- Submenu -->
+                <ul class="collapse" id="schedule-menu" data-parent="#basicSidebar">
+                    <li class="nav-item">
+                        <a class="nav-link" href="appointment-add.html">Add Appointment</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="appointment-list.html">Appointment List</a>
+                    </li>
+                </ul>
+                <!-- End Submenu -->
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" data-toggle="collapse" href="#login-menu">
+                    <i class="material-icons pmd-list-icon pmd-sm md-light">exit_to_app</i>
+                    <span class="media-body">Login</span>
+                    <div class="media-right media-bottom">
+                        <i class="material-icons md-18 pmd-accordion-arrow">expand_more</i>
+                    </div>
+                </a>
+                <!-- Submenu -->
+                <ul class="collapse" id="login-menu" data-parent="#basicSidebar">
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login Option 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login2.html">Login Option 2</a>
+                    </li>
+                </ul>
+                <!-- End Submenu -->
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="notifications.html">
+                    <i class="material-icons pmd-list-icon pmd-sm md-light">notifications</i>
+                    <span class="media-body">Notifications</span>
+                </a>
+            </li>
+
+            <li class="nav-item ">
+                <a class="nav-link" href="mailbox.html">
+                    <i class="material-icons pmd-list-icon pmd-sm md-light">email</i>
+                    <span class="media-body">Mailbox</span>
+                </a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="email-templates.html">
+                    <i class="material-icons pmd-list-icon pmd-sm md-light">web</i>
+                    <span class="media-body">Email Templates</span>
+                </a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="calendar.html">
+                    <i class="material-icons pmd-list-icon pmd-sm md-light">calendar_today</i>
+                    <span class="media-body">Calendar</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" data-toggle="collapse" href="#thirdpartyelements">
+                    <i class="material-icons pmd-list-icon pmd-sm">pages</i>
+                    <span class="media-body">Other Pages</span>
+                    <div class="media-right media-bottom">
+                        <i class="material-icons md-18 pmd-accordion-arrow">expand_more</i>
+                    </div>
+                </a>
+                <!-- Submenu -->
+                <ul class="collapse" id="thirdpartyelements" data-parent="#basicSidebar">
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="typography.html">Typography</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="iconography.html">Iconography</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="search-results.html">Search Results</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="search-no-results-found.html">Search No Results Found</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="alert.html">Alerts and Warnings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="404.html">404</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="404-with-sidebar.html">404 with Sidebar</a>
+                    </li>
+                </ul>
+                <!-- End Submenu -->
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="settings.html">
+                    <i class="material-icons pmd-list-icon pmd-sm md-light">settings</i>
+                    <span class="media-body">Settings</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="faqs.html">
+                    <i class="material-icons pmd-list-icon pmd-sm md-light">help</i>
+                    <span class="media-body">FAQs</span>
+                </a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link pmd-ripple-effect" href="login.html">
+                    <i class="material-icons pmd-list-icon pmd-sm md-light">logout</i>
+                    <span class="media-body">Log Out</span>
+                </a>
+            </li>
+        </ul>
+        <!-- End Accordian Menu -->
+
+    </aside>
+    <!-- End Left Sidebar -->
+
+    <!----------------------------
+		Content Area
+     ----------------------------->
+    <div id="content" class="pmd-content content-area dashboard">
+        
+        <!-- Page Title for Responsive View -->
+        <h1 class="h2 hide-large-desk">Dashboard</h1>
+
+        <div class="row">
+
+            <!-- Department Card Statistic  -->
+            <div class="col-md-6 col-xl-3">
+                <div class="card pmd-card card-department total-statistic">
+                    <div class="card-body">
+                        <div class="media category-title">
+                            <i class="material-icons pmd-icon-circle pmd-md category-icon">location_city</i>
+                            <div class="media-body">
+                                <h4>Departments</h4>
+                                <h2 class="display-4 d-flex align-items-center">150
+                                    <span class="text-success card-subtitle category-percetange">
+                                        <i class="material-icons">arrow_drop_up</i>
+                                        (+12%)
+                                    </span>
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Department Card Statistic  -->
+
+            <!-- Doctor Card Statistic  -->
+            <div class="col-md-6 col-xl-3">
+                <div class="card pmd-card card-doctor total-statistic">
+                    <div class="card-body">
+                        <div class="media category-title">
+                            <i class="material-icons pmd-icon-circle pmd-md category-icon">enhanced_encryption</i>
+                            <div class="media-body">
+                                <h4>Doctors</h4>
+                                <h2 class="display-4 d-flex align-items-center">1520
+                                    <span class="text-danger card-subtitle category-percetange">
+                                        <i class="material-icons">arrow_drop_down</i>
+                                        (-8%)
+                                    </span>
+                                </h2>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- End Doctor Card Statistic  -->
+
+            <!-- Patients Card Statistic  -->
+            <div class="col-md-6 col-xl-3">
+                <div class="card pmd-card card-patients total-statistic">
+                    <div class="card-body">
+                        <div class="media category-title">
+                            <i
+                                class="material-icons pmd-icon-circle pmd-md category-icon">airline_seat_recline_normal</i>
+                            <div class="media-body">
+                                <h4>Patients</h4>
+                                <h2 class="display-4 d-flex align-items-center">4500
+                                    <span class="text-success card-subtitle category-percetange">
+                                        <i class="material-icons">arrow_drop_up</i>
+                                        (+12%)
+                                    </span>
+                                </h2>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- End Patients Card Statistic  -->
+
+            <!-- Appointments Card Statistic  -->
+            <div class="col-md-6 col-xl-3">
+                <div class="card pmd-card card-appointment total-statistic">
+                    <div class="card-body">
+                        <div class="media category-title">
+                            <i class="material-icons pmd-icon-circle pmd-md category-icon">event</i>
+                            <div class="media-body">
+                                <h4>Appointments</h4>
+                                <h2 class="display-4 d-flex align-items-center">1500
+                                    <span class="text-danger card-subtitle category-percetange">
+                                        <i class="material-icons">arrow_drop_down</i>
+                                        (-12%)
+                                    </span>
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Appointments Card Statistic  -->
+
+        </div>
+        <div class="row">
+
+            <!-- Total Progress Chart -->
+            <div class="col-md-12">
+                <div class="card pmd-card">
+                    <div class="card-header border-bottom">
+                        <h3 class="card-title pmd-title-separator">Total Progress</h3>
+                    </div>
+                    <div class="card-body">
+                        <!-- Chart -->
+                        <div class="chart-container">
+                            <canvas id="line-chartcanvas" height="350"></canvas>
+                        </div>
+                        <!--End Chart -->
+                    </div>
+                </div>
+            </div>
+            <!-- End Total Progress Chart -->
+        </div>
+        <div class="row">
+            <!-- Heart Surgeries Chart -->
+            <div class="col-xl-4 col-md-12">
+                <div class="card pmd-card">
+                    <div class="card-header border-bottom pmd-title-separator">
+                        <div class="media justify-content-between align-items-center">
+                            <h3 class="card-title media-body mb-0">Heart Surgeries</h3>
+                            <span class="text-success card-subtitle category-percetange">
+                                <i class="material-icons">arrow_drop_up</i>
+                                (+12%)
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <!-- Chart -->
+                        <div class="chart-container">
+                            <canvas id="heart-surgery-chart" height="200"></canvas>
+                        </div>
+                        <!--End Chart -->
+                    </div>
+                </div>
+            </div>
+            <!-- End Heart Surgeries Chart -->
+
+            <!-- Medical Treatment Chart -->
+            <div class="col-xl-4 col-md-12">
+                <div class="card pmd-card">
+                    <div class="card-header border-bottom pmd-title-separator">
+                        <div class="media justify-content-between align-items-center">
+                            <h3 class="card-title media-body mb-0">Medical Treatment</h3>
+                            <span class="text-danger card-subtitle category-percetange">
+                                <i class="material-icons">arrow_drop_down</i>
+                                (-15%)
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <!-- Chart -->
+                        <div class="chart-container">
+                            <canvas id="medical-treatment-chart" height="200"></canvas>
+                        </div>
+                        <!--End Chart -->
+                    </div>
+                </div>
+            </div>
+            <!-- End Medical Treatment Chart -->
+
+            <!-- Total Revenue Chart -->
+            <div class="col-xl-4 col-md-12">
+                <div class="card pmd-card">
+                    <div class="card-header border-bottom pmd-title-separator">
+                        <div class="media justify-content-between align-items-center">
+                            <h3 class="card-title media-body mb-0">Total Revenue</h3>
+                            <span class="text-success card-subtitle category-percetange">
+                                <i class="material-icons">arrow_drop_up</i>
+                                (+12%)
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <!-- Chart -->
+                        <div class="chart-container">
+                            <canvas id="total-revenue-chart" height="200"></canvas>
+                        </div>
+                        <!--End Chart -->
+                    </div>
+                </div>
+            </div>
+            <!-- End Total Revenue Chart -->
+        </div>
+        <div class="row">
+            <!-- New Patients -->
+            <div class="col-md-12 col-xl-8">
+                <div class="card pmd-card">
+                    <div class="card-header border-bottom media justify-content-between">
+                        <div class="media-body">
+                            <h3 class="card-title pmd-title-separator">New Patients</h3>
+                        </div>
+                        <a class="btn pmd-btn-raised btn-primary pmd-ripple-effect btn-sm" href="patient-list.html">View
+                            All</a>
+                    </div>
+                    <div class="card-body">
+                        <table cellspacing="0" cellpadding="0" class="table pmd-table pmd-table-card">
+                            <thead>
+                                <tr>
+                                    <th>No</th>
+                                    <th>Name</th>
+                                    <th>Patient ID</th>
+                                    <th>Last Visit</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td data-title="No">1</td>
+                                    <td data-title="Name">
+                                        <div class="media align-items-center">
+                                            <img src="assets/images/profile-1.jpg" alt="Profile Image"
+                                                class="pmd-avatar-list-img" width="40" height="40">
+                                            <div class="media-body">Nicholas Warren</div>
+                                        </div>
+                                    </td>
+                                    <td data-title="Patient ID">XYZ-101</td>
+                                    <td data-title="Last Visit">25<sup>th</sup> April, 2019</td>
+                                    <td data-title="Status">
+                                        <span class="badge badge-pill pmd-badge-outline-secondary">Under
+                                            Treatment</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-title="No">2</td>
+                                    <td data-title="Name">
+                                        <div class="media align-items-center">
+                                            <img src="assets/images/profile-2.jpg" alt="Profile Image"
+                                                class="pmd-avatar-list-img" width="40" height="40">
+                                            <div class="media-body">Rachel Freeman</div>
+                                        </div>
+                                    </td>
+                                    <td data-title="Patient ID">XYZ-102</td>
+                                    <td data-title="Last Visit">24<sup>th</sup> April, 2019</td>
+                                    <td data-title="Status">
+                                        <span class="badge badge-pill pmd-badge-outline-secondary">Under
+                                            Treatment</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-title="No">3</td>
+                                    <td data-title="Name">
+                                        <div class="media align-items-center">
+                                            <img src="assets/images/profile-3.jpg" alt="Profile Image"
+                                                class="pmd-avatar-list-img" width="40" height="40">
+                                            <div class="media-body">David Sims</div>
+                                        </div>
+                                    </td>
+                                    <td data-title="Patient ID">XYZ-103</td>
+                                    <td data-title="Last Visit">24<sup>th</sup> April, 2019</td>
+                                    <td data-title="Status">
+                                        <span class="badge badge-pill pmd-badge-outline-secondary">Under
+                                            Treatment</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-title="No">4</td>
+                                    <td data-title="Name">
+                                        <div class="media align-items-center">
+                                            <img src="assets/images/profile-4.jpg" alt="Profile Image"
+                                                class="pmd-avatar-list-img" width="40" height="40">
+                                            <div class="media-body">Zesika Smith</div>
+                                        </div>
+                                    </td>
+                                    <td data-title="Patient ID">XYZ-104</td>
+                                    <td data-title="Last Visit">23<sup>th</sup> April, 2019</td>
+                                    <td data-title="Status">
+                                        <span class="badge badge-pill pmd-badge-outline-success">Cured</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-title="No">5</td>
+                                    <td data-title="Name">
+                                        <div class="media align-items-center">
+                                            <img src="assets/images/profile-5.jpg" alt="Profile Image"
+                                                class="pmd-avatar-list-img" width="40" height="40">
+                                            <div class="media-body">Melissa Warren</div>
+                                        </div>
+                                    </td>
+                                    <td data-title="Patient ID">XYZ-105</td>
+                                    <td data-title="Last Visit">23<sup>th</sup> April, 2019</td>
+                                    <td data-title="Status">
+                                        <span class="badge badge-pill pmd-badge-outline-success">Cured</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!-- End New Patients -->
+
+            <!-- Doctors List -->
+            <div class="col-md-12 col-xl-4">
+                <div class="card pmd-card doctor-list">
+                    <div class="card-header border-bottom media justify-content-between">
+                        <div class="media-body">
+                            <h3 class="card-title pmd-title-separator">Doctors</h3>
+                        </div>
+                        <a class="btn pmd-btn-raised btn-primary pmd-ripple-effect btn-sm" href="doctor-list.html">View
+                            All</a>
+                    </div>
+
+                    <div class="list-group pmd-list">
+                        <a class="list-group-item d-flex flex-row" href="javascript:void(0);">
+                            <span class="pmd-avatar-list-img">
+                                <img alt="40x40" data-src="holder.js/40x40" class="img-fluid"
+                                    src="assets/images/profile-6.jpg" data-holder-rendered="true">
+                            </span>
+                            <div class="media-body">
+                                <h5 class="pmd-list-title">Jesse Snyder</h5>
+                                <p class="pmd-list-subtitle">Cardiologist</p>
+                            </div>
+                        </a>
+                        <a class="list-group-item d-flex flex-row" href="javascript:void(0);">
+                            <span class="pmd-avatar-list-img">
+                                <img alt="40x40" data-src="holder.js/40x40" class="img-fluid"
+                                    src="assets/images/profile-7.jpg" data-holder-rendered="true">
+                            </span>
+                            <div class="media-body">
+                                <h5 class="pmd-list-title">Elvera Lewis</h5>
+                                <p class="pmd-list-subtitle">Neurologist</p>
+                            </div>
+                        </a>
+                        <a class="list-group-item d-flex flex-row" href="javascript:void(0);">
+                            <span class="pmd-avatar-list-img">
+                                <img alt="40x40" data-src="holder.js/40x40" class="img-fluid"
+                                    src="assets/images/profile-8.jpg" data-holder-rendered="true">
+                            </span>
+                            <div class="media-body">
+                                <h5 class="pmd-list-title">Carol Watkins</h5>
+                                <p class="pmd-list-subtitle">Cardiologist</p>
+                            </div>
+                        </a>
+                        <a class="list-group-item d-flex flex-row" href="javascript:void(0);">
+                            <span class="pmd-avatar-list-img">
+                                <img alt="40x40" data-src="holder.js/40x40" class="img-fluid"
+                                    src="assets/images/profile-9.jpg" data-holder-rendered="true">
+                            </span>
+                            <div class="media-body">
+                                <h5 class="pmd-list-title">Beverly Little</h5>
+                                <p class="pmd-list-subtitle">Cardiologist</p>
+                            </div>
+                        </a>
+                        <a class="list-group-item d-flex flex-row" href="javascript:void(0);">
+                            <span class="pmd-avatar-list-img">
+                                <img alt="40x40" data-src="holder.js/40x40" class="img-fluid"
+                                    src="assets/images/profile-10.jpg" data-holder-rendered="true">
+                            </span>
+                            <div class="media-body">
+                                <h5 class="pmd-list-title">Marie Peterson</h5>
+                                <p class="pmd-list-subtitle">Cardiologist</p>
+                            </div>
+                        </a>
+                        <a class="list-group-item d-flex flex-row" href="javascript:void(0);">
+                            <span class="pmd-avatar-list-img">
+                                <img alt="40x40" data-src="holder.js/40x40" class="img-fluid"
+                                    src="assets/images/profile-11.jpg" data-holder-rendered="true">
+                            </span>
+                            <div class="media-body">
+                                <h5 class="pmd-list-title">Alice Webb</h5>
+                                <p class="pmd-list-subtitle">Cardiologist</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- End Doctors List -->
+
+
+        </div>
+    </div>
+
+    <!-- End Content Area-->
+
+    <!----------------------------
+		Footer 
+ 	----------------------------->
+    <footer class="pmd-footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 align-self-center">
+                    <div class="pmd-site-info">
+                        © <span class="auto-update-year"></span> A <a href="https://pro.propeller.in/"
+                            target="_blank"><strong>Propeller Pro </strong></a> Theme
+                    </div>
+                </div>
+            </div>
+        </div> <!-- End Container -->
+    </footer>
+    <!-- End Footer -->
+
+
+    <!-- build:include snippets/js-files-index.html -->
+    <!-- /build -->
+
+    <!-- build:remove -->
+    <!--Admin js-->
+    <script type="text/javascript" src="assets/js/ehealthcare-admin-compress.min.js"></script>
+    <!-- /build -->
+
+    <script type="text/javascript">
+        $(function () {
+            //line chart
+            var ctx = document.getElementById("line-chartcanvas");
+            var myChart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug",
+                        "Sep", "Oct", "Nov", "Dec"
+                    ],
+                    datasets: [{
+                            label: "Patient",
+                            borderColor: "#34316E",
+                            borderWidth: "2",
+                            backgroundColor: "rgba(30, 30, 45, 0.07)",
+                            pointHighlightStroke: "#1e1e2d",
+                            pointRadius: 0,
+                            data: [10, 45, 30, 30, 3, 10, 15, 2, 5, 5, 5, 25],
+                        },
+                        {
+                            label: "Appointment",
+                            borderColor: "#F58634",
+                            borderWidth: "2",
+                            pointRadius: 0,
+                            backgroundColor: "rgba(245, 134, 52, 0.07)",
+                            pointHighlightStroke: "#F58634",
+                            data: [15, 40, 45, 40, 3, 10, 25, 5, 10, 5, 10, 45]
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    tooltips: {
+                        mode: 'index',
+                        intersect: false
+                    },
+                    hover: {
+                        mode: 'nearest',
+                        intersect: true
+                    },
+                    maintainAspectRatio: false
+                }
+            });
+
+            //Heart surgery chart
+            var ctx1 = document.getElementById("heart-surgery-chart");
+            var myChart1 = new Chart(ctx1, {
+                type: 'line',
+                data: {
+                    labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug",
+                        "Sep", "Oct", "Nov", "Dec"
+                    ],
+                    datasets: [{
+                        borderColor: "#34316E",
+                        borderWidth: "2",
+                        backgroundColor: "transparent",
+                        pointHighlightStroke: "#1e1e2d",
+                        pointRadius: 0,
+                        data: [10, 50, 30, 30, 3, 10, 15, 2, 5, 5, 5, 25],
+                    }]
+                },
+                options: {
+                    legend: {
+                        display: false
+                    },
+                    responsive: true,
+                    maintainAspectRatio: false
+                }
+            });
+
+            //Medical treatment chart
+            var ctx2 = document.getElementById("medical-treatment-chart");
+            var myChart2 = new Chart(ctx2, {
+                type: 'line',
+                data: {
+                    labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug",
+                        "Sep", "Oct", "Nov", "Dec"
+                    ],
+                    datasets: [{
+                        borderColor: "#F58634",
+                        borderWidth: "2",
+                        backgroundColor: "transparent",
+                        pointHighlightStroke: "#1e1e2d",
+                        pointRadius: 0,
+                        data: [30, 10, 50, 30, 2, 5, 15, 7, 5, 5, 5, 25],
+                    }]
+                },
+                options: {
+                    legend: {
+                        display: false
+                    },
+                    responsive: true,
+                    maintainAspectRatio: false
+                }
+            });
+
+            //Toal Revenue Doughnut chart
+            var ctx2 = document.getElementById("total-revenue-chart");
+            var myChart2 = new Chart(ctx2, {
+                type: 'doughnut',
+                data: {
+                    labels: [
+                        "Net Revenue",
+                        "Gross Income",
+                        "Marketing"
+                    ],
+                    datasets: [{
+                        backgroundColor: ["#4caf50", "#34316E", "#F58634"],
+                        pointRadius: 0,
+                        data: [50, 30, 20],
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false
+                }
+            });
+        });
+    </script>
+</body>
+
+
+<!-- Mirrored from themes.propeller.in/bootstrap4/html/e-health-care-admin-theme/dashboard.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 14 Aug 2023 07:48:32 GMT -->
+</html>

@@ -1,0 +1,1724 @@
+<!doctype html>
+<html lang="en-US">
+
+
+<!-- Mirrored from themes.propeller.in/bootstrap4/html/e-health-care-admin-theme/patient-list.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 14 Aug 2023 07:48:43 GMT -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+    <title>e-Health Care Admin HTML Theme - Patient List Page Template</title>
+    <meta name="description"
+        content="Patient List Page Template. e-Health Care Admin Theme is a multipurpose and fully responsive Bootstrap 4 and Material Design based Admin HTML Template by Propeller designed mainly for Clinics, Hospitals, Dentists and more such applications related to health care." />
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico">
+
+    <!-- Google icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Rubik and Open sans Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700|Open+Sans:300,400,600,700"
+        rel="stylesheet">
+
+    <!-- build:remove -->
+    <!-- e-Health Care Admin Theme CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/ehealthcare-admin-compress.min.css">
+    <!-- /build -->
+
+    <!-- build:include snippets/css-files-patient-list-datatable.html -->
+    <!-- /build -->
+
+    <!-- build:remove -->
+    <!--Google Analytics code-->
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script',
+            '../bootstrap4-admin-theme/assets/js/analytics.js', 'ga');
+
+        ga('create', 'UA-124615-22', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+    <!-- Canonical Tag -->
+    <link rel="canonical" href="patient-list.html" />
+    <!-- /build -->
+
+</head>
+
+<body>
+
+    <!----------------------------
+		Navbar
+ 	----------------------------->
+    <nav class="navbar navbar-expand-xl fixed-top navbar-light bg-white pmd-navbar pmd-z-depth-light-2">
+        <a href="javascript:void(0);" data-target="basicSidebar" data-placement="left" data-position="slidepush"
+            is-open="true" is-open-width="1300"
+            class="btn btn-sm pmd-btn-fab pmd-btn-flat pmd-ripple-effect pmd-sidebar-toggle humburger-menu">
+            <i class="material-icons md-dark md-inactive">menu</i>
+        </a>
+
+        <!-- Navbar Logo for Responsive view -->
+        <div class="navbar-header hide-large-desk p-0">
+            <a class="navbar-brand navbar-custom-brand" href="dashboard.html">
+                <img src="assets/images/logo.png" alt="Logo" class="img-fluid" width="120">
+            </a>
+        </div>
+
+        <!-- Page Title for Desktop View -->
+        <div class="show-large-desk">
+            <h1 class="h2 mb-0">Patients</h1>
+        </div>
+
+        <!-- Right Side Menu -->
+        <div class="pmd-navbar-right-icon ml-auto">
+
+            <!-- Global Search Field -->
+            <div class="nav-item d-inline-block global-search">
+                <a class="btn btn-sm pmd-btn-fab pmd-btn-flat search-form-open" href="javascript:void(0);">
+                    <i class="material-icons md-dark md-inactive">search</i>
+                </a>
+                <form class="search-form" method="POST" id="searchform" action="https://themes.propeller.in/bootstrap4/html/e-health-care-admin-theme/search-results.html">
+                    <div class="form-group pmd-textfield mb-0 pmd-textfield-outline">
+                        <input type="text" class="form-control pr-5" id="globalSearch" aria-describedby="globalSearch"
+                            placeholder="Search & Enter">
+                        <a class="btn btn-sm pmd-btn-fab pmd-btn-flat search-form-close" href="javascript:void(0);">
+                            <i class="material-icons md-dark md-inactive">close</i>
+                        </a>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Email Dropdown -->
+            <div class="nav-item d-inline-block dropdown pmd-dropdown">
+                <a href="javascript:void(0);" class="btn btn-sm pmd-btn-fab pmd-btn-flat" id="emailDropdown"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Emails">
+                    <i data-badge="5"
+                        class="material-icons pmd-badge pmd-badge-overlap pmd-badge-secondary md-dark md-inactive pmd-sm">
+                        mail_outline
+                    </i>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right notifications-dropdown" aria-labelledby="emailDropdown">
+                    <div class="card pmd-card mb-0">
+                        <div class="card-header d-flex w-100 justify-content-between pmd-card-border">
+                            <h3 class="pmd-list-title mb-0">Emails</h3>
+                            <a href="javascript:void(0);" class="text-secondary small">2 New Emails</a>
+                        </div>
+                        <div class="list-group pmd-list pmd-list-border m-0">
+                            <a class="list-group-item d-block unread" href="javascript:void(0);">
+                                <div class="media">
+                                    <span class="pmd-avatar-list-img">
+                                        <img alt="Profile Picture" data-src="holder.js/40x40" class="img-fluid"
+                                            src="assets/images/profile-1.jpg" data-holder-rendered="true">
+                                    </span>
+                                    <div class="media-body">
+                                        <h5 class="pmd-list-title">Brian Young</h5>
+                                        <p class="small text-dark mb-0">Desktop Application developer expert</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="list-group-item d-block unread" href="javascript:void(0);">
+                                <div class="media">
+                                    <span class="pmd-avatar-list-img">
+                                        <img alt="Profile Picture" data-src="holder.js/40x40" class="img-fluid"
+                                            src="assets/images/profile-2.jpg" data-holder-rendered="true">
+                                    </span>
+                                    <div class="media-body">
+                                        <h5 class="pmd-list-title">Diana Harris</h5>
+                                        <p class="small text-dark mb-0">Website speed issues</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="list-group-item d-block" href="javascript:void(0);">
+                                <div class="media">
+                                    <span class="pmd-avatar-list-img">
+                                        <img alt="Profile Picture" data-src="holder.js/40x40" class="img-fluid"
+                                            src="assets/images/profile-3.jpg" data-holder-rendered="true">
+                                    </span>
+                                    <div class="media-body">
+                                        <h5 class="pmd-list-title">Phillip Turner</h5>
+                                        <p class="small text-dark mb-0">Website Image Optimization</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="list-group-item d-block" href="javascript:void(0);">
+                                <div class="media">
+                                    <span class="pmd-avatar-list-img">
+                                        <img alt="Profile Picture" data-src="holder.js/40x40" class="img-fluid"
+                                            src="assets/images/profile-4.jpg" data-holder-rendered="true">
+                                    </span>
+                                    <div class="media-body">
+                                        <h5 class="pmd-list-title">Harold Harris</h5>
+                                        <p class="small text-dark mb-0">Large size image loading issue</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="list-group-item d-block" href="javascript:void(0);">
+                                <div class="media">
+                                    <span class="pmd-avatar-list-img">
+                                        <img alt="Profile Picture" data-src="holder.js/40x40" class="img-fluid"
+                                            src="assets/images/profile-5.jpg" data-holder-rendered="true">
+                                    </span>
+                                    <div class="media-body">
+                                        <h5 class="pmd-list-title">Rachel Freeman</h5>
+                                        <p class="small text-dark mb-0">Add new feature in Calendar</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="list-group-item d-block" href="javascript:void(0);">
+                                <div class="media">
+                                    <span class="pmd-avatar-list-img">
+                                        <img alt="Profile Picture" data-src="holder.js/40x40" class="img-fluid"
+                                            src="assets/images/profile-6.jpg" data-holder-rendered="true">
+                                    </span>
+                                    <div class="media-body">
+                                        <h5 class="pmd-list-title">John Smith</h5>
+                                        <p class="small text-dark mb-0">Add more color options in themes</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <a href="mailbox.html" class="btn btn-secondary pmd-ripple-effect pmd-btn-flat view-all">View
+                            All</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Notification Dropdown -->
+            <div class="nav-item dropdown pmd-dropdown d-inline-block">
+                <a class="btn btn-sm pmd-btn-fab pmd-btn-flat" href="javascript:void(0);" id="notificationDropdown"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Notifications">
+                    <i data-badge="3"
+                        class="material-icons pmd-badge pmd-badge-overlap pmd-badge-secondary md-dark md-inactive pmd-sm">notifications_none</i>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right notifications-dropdown"
+                    aria-labelledby="notificationDropdown">
+                    <div class="card pmd-card mb-0">
+                        <div class="card-header d-flex w-100 justify-content-between pmd-card-border">
+                            <h3 class="pmd-list-title mb-0">Notifications</h3>
+                            <a href="javascript:void(0);" class="text-secondary small">2 New Notifications</a>
+                        </div>
+                        <div class="list-group pmd-list pmd-list-border m-0">
+                            <a class="list-group-item d-block unread" href="javascript:void(0);">
+                                <div class="media">
+                                    <span class="pmd-avatar-list-img">
+                                        <img alt="Profile Picture" data-src="holder.js/40x40" class="img-fluid"
+                                            src="assets/images/profile-1.jpg" data-holder-rendered="true">
+                                    </span>
+                                    <div class="media-body">
+                                        <h5 class="pmd-list-title"><strong>Robert Oliver</strong> applied for
+                                            appointment on 10<sup>th</sup> May 2019 11:00AM.</h5>
+                                        <p class="small text-dark mb-0">5 Minutes ago</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="list-group-item d-block unread" href="javascript:void(0);">
+                                <div class="media">
+                                    <span class="pmd-avatar-list-img">
+                                        <img alt="Profile Picture" data-src="holder.js/40x40" class="img-fluid"
+                                            src="assets/images/profile-2.jpg" data-holder-rendered="true">
+                                    </span>
+                                    <div class="media-body">
+                                        <h5 class="pmd-list-title"><strong>Andrea Cole</strong> discharged from
+                                            treatment yesterday.</h5>
+                                        <p class="small text-dark mb-0">15 Minutes ago</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="list-group-item d-block" href="javascript:void(0);">
+                                <div class="media">
+                                    <span class="pmd-avatar-list-img">
+                                        <img alt="Profile Picture" data-src="holder.js/40x40" class="img-fluid"
+                                            src="assets/images/profile-3.jpg" data-holder-rendered="true">
+                                    </span>
+                                    <div class="media-body">
+                                        <h5 class="pmd-list-title"><strong>Scott Mason</strong> applied for appointment
+                                            on 13<sup>th</sup> May 2019 12:00PM.</h5>
+                                        <p class="small text-dark mb-0">25 Minutes ago</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="list-group-item d-block" href="javascript:void(0);">
+                                <div class="media">
+                                    <span class="pmd-avatar-list-img">
+                                        <img alt="Profile Picture" data-src="holder.js/40x40" class="img-fluid"
+                                            src="assets/images/profile-4.jpg" data-holder-rendered="true">
+                                    </span>
+                                    <div class="media-body">
+                                        <h5 class="pmd-list-title"><strong>Frank Thomas</strong> admitted for operation
+                                            in ward no. 21.
+                                        </h5>
+                                        <p class="small text-dark mb-0">15 Minutes ago</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="list-group-item d-block" href="javascript:void(0);">
+                                <div class="media">
+                                    <span class="pmd-avatar-list-img">
+                                        <img alt="Profile Picture" data-src="holder.js/40x40" class="img-fluid"
+                                            src="assets/images/profile-5.jpg" data-holder-rendered="true">
+                                    </span>
+                                    <div class="media-body">
+                                        <h5 class="pmd-list-title"><strong>Mary Chavez</strong> came for routine
+                                            checkup.
+                                        </h5>
+                                        <p class="small text-dark mb-0">15 Minutes ago</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="list-group-item d-block" href="javascript:void(0);">
+                                <div class="media">
+                                    <span class="pmd-avatar-list-img">
+                                        <img alt="Profile Picture" data-src="holder.js/40x40" class="img-fluid"
+                                            src="assets/images/profile-6.jpg" data-holder-rendered="true">
+                                    </span>
+                                    <div class="media-body">
+                                        <h5 class="pmd-list-title"><strong>Tyler Wood</strong> joined in Cardiology
+                                            Department.</h5>
+                                        <p class="small text-dark mb-0">25 Minutes ago</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="list-group-item d-block" href="javascript:void(0);">
+                                <div class="media">
+                                    <span class="pmd-avatar-list-img">
+                                        <img alt="Profile Picture" data-src="holder.js/40x40" class="img-fluid"
+                                            src="assets/images/profile-7.jpg" data-holder-rendered="true">
+                                    </span>
+                                    <div class="media-body">
+                                        <h5 class="pmd-list-title"><strong>Ruth Fields</strong> applied for appointment
+                                            on 12<sup>th</sup> May 2019 4:00PM.</h5>
+                                        <p class="small text-dark mb-0">15 Minutes ago</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="list-group-item d-block" href="javascript:void(0);">
+                                <div class="media">
+                                    <span class="pmd-avatar-list-img">
+                                        <img alt="Profile Picture" data-src="holder.js/40x40" class="img-fluid"
+                                            src="assets/images/profile-8.jpg" data-holder-rendered="true">
+                                    </span>
+                                    <div class="media-body">
+                                        <h5 class="pmd-list-title"><strong>Martha Jhon</strong> applied for appointment
+                                            on 10<sup>th</sup> May2019 12:00PM.</h5>
+                                        <p class="small text-dark mb-0">15 Minutes ago</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <a href="notifications.html"
+                            class="btn btn-secondary pmd-ripple-effect pmd-btn-flat view-all">View
+                            All</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- User Info Dropdown  -->
+            <div class="nav-item dropdown pmd-dropdown d-none d-md-inline-block">
+                <a class="btn btn-sm pmd-btn-flat" href="javascript:void(0);" id="userProfileDropdown"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <div class="media align-items-center">
+                        <div class="media-left">
+                            <img src="assets/images/profile-1.jpg" alt="Admin Picture"
+                                class="pmd-icon-circle pmd-icon-xs mr-2">
+                        </div>
+                        <div class="media-body">
+                            <b class="d-inline-flex mr-2 text-dark">Admin</b>
+                        </div>
+                        <div class="media-right">
+                            <i class="material-icons md-18 md-inactive md-dark">expand_more</i>
+                        </div>
+                    </div>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right notifications-dropdown user-profile-dropdown"
+                    aria-labelledby="userProfileDropdown">
+                    <div class="card pmd-card mb-0">
+                        <div class="list-group pmd-list pmd-list-border m-0">
+
+                            <a class="d-flex flex-row list-group-item text-dark" href="settings.html">
+                                <i class="material-icons pmd-xs mr-2">settings</i>
+                                <span class="media-body align-self-center">Settings</span>
+                            </a>
+
+                            <a class="d-flex flex-row list-group-item text-dark" href="faqs.html">
+                                <i class="material-icons pmd-xs mr-2">help</i>
+                                <span class="media-body align-self-center">FAQs</span>
+                            </a>
+                            <a class="d-flex flex-row list-group-item text-danger" href="login.html">
+                                <i class="material-icons pmd-xs mr-2">logout</i>
+                                <span class="media-body align-self-center">Logout</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Right Side Menu -->
+
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Sidebar overlay -->
+    <div class="pmd-sidebar-overlay"></div>
+
+    <!----------------------------
+		Left Sidebar
+ 	----------------------------->
+    <aside id="basicSidebar"
+        class="pmd-sidebar pmd-sidebar-dark bg-primary pmd-sidebar-slide-push pmd-sidebar-open  pmd-z-depth-light-2"
+        role="navigation">
+
+        <div class="navbar-header fixed-top">
+            <!-- Navbar Logo for Desktop view -->
+            <a class="navbar-brand navbar-custom-brand d-none d-md-block" href="dashboard.html">
+                <img src="assets/images/logo-white.png" alt="Logo" class="img-fluid" width="172">
+            </a>
+            <!-- User Info For Responsive View -->
+            <div class="pmd-user-info d-block d-md-none text-center">
+                <a href="javascript:void(0);" class="btn-user">
+                    <img class="rounded-circle" src="assets/images/profile-1.jpg" width="56" height="56" alt="avatar">
+                    <h3 class="pmd-title m-0 text-white">Admin</h3>
+                </a>
+            </div>
+        </div>
+        <!-- Accordian Menu -->
+        <ul class="nav flex-column pmd-sidebar-nav">
+            <li class="nav-item ">
+                <a class="nav-link pmd-ripple-effect" href="dashboard.html">
+                    <i class="material-icons pmd-list-icon pmd-sm md-light">home</i>
+                    <span class="media-body">Dashboard</span>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" data-toggle="collapse" href="#department-menu">
+                    <i class="material-icons pmd-list-icon pmd-sm md-light">location_city</i>
+                    <span class="media-body">Departments</span>
+                    <div class="media-right media-bottom">
+                        <i class="material-icons md-18 pmd-accordion-arrow">expand_more</i>
+                    </div>
+                </a>
+                <!-- Submenu -->
+                <ul class="collapse" id="department-menu" data-parent="#basicSidebar" aria-expanded="false">
+                    <li class="nav-item">
+                        <a class="nav-link" href="department-list.html">Department Types</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="department-detail.html">Department Details</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="department-blank-state.html">Department Blank State</a>
+                    </li>
+                </ul>
+                <!-- End Submenu -->
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" data-toggle="collapse" href="#doctor-menu">
+                    <i class="material-icons pmd-list-icon pmd-sm md-light">enhanced_encryption</i>
+                    <span class="media-body">Doctors</span>
+                    <div class="media-right media-bottom">
+                        <i class="material-icons md-18 pmd-accordion-arrow">expand_more</i>
+                    </div>
+                </a>
+                <!-- Submenu -->
+                <ul class="collapse" id="doctor-menu" data-parent="#basicSidebar" aria-expanded="false">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="doctor-list.html">Doctor List</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="doctor-add.html">Add Doctor</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="doctor-detail.html">Doctor Detail</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="doctor-blank-state.html">Doctor Blank State</a>
+                    </li>
+                </ul>
+                <!-- End Submenu -->
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="collapse" href="#patient-menu">
+                    <i class="material-icons pmd-list-icon pmd-sm md-light">airline_seat_recline_normal</i>
+                    <span class="media-body">Patients</span>
+                    <div class="media-right media-bottom">
+                        <i class="material-icons md-18 pmd-accordion-arrow">expand_more</i>
+                    </div>
+                </a>
+                <!-- Submenu -->
+                <ul class="collapse show" id="patient-menu" data-parent="#basicSidebar" aria-expanded="false">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="patient-list.html">Patient List</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="patient-add.html">Add Patient</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="patient-detail.html">Patient Detail</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="patient-blank-state.html">Patient Blank State</a>
+                    </li>
+                </ul>
+                <!-- End Submenu -->
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" data-toggle="collapse" href="#schedule-menu">
+                    <i class="material-icons pmd-list-icon pmd-sm md-light">event</i>
+                    <span class="media-body">Appointments</span>
+                    <div class="media-right media-bottom">
+                        <i class="material-icons md-18 pmd-accordion-arrow">expand_more</i>
+                    </div>
+                </a>
+                <!-- Submenu -->
+                <ul class="collapse" id="schedule-menu" data-parent="#basicSidebar">
+                    <li class="nav-item">
+                        <a class="nav-link" href="appointment-add.html">Add Appointment</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="appointment-list.html">Appointment List</a>
+                    </li>
+                </ul>
+                <!-- End Submenu -->
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" data-toggle="collapse" href="#login-menu">
+                    <i class="material-icons pmd-list-icon pmd-sm md-light">exit_to_app</i>
+                    <span class="media-body">Login</span>
+                    <div class="media-right media-bottom">
+                        <i class="material-icons md-18 pmd-accordion-arrow">expand_more</i>
+                    </div>
+                </a>
+                <!-- Submenu -->
+                <ul class="collapse" id="login-menu" data-parent="#basicSidebar">
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login Option 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login2.html">Login Option 2</a>
+                    </li>
+                </ul>
+                <!-- End Submenu -->
+            </li>
+
+            <li class="nav-item ">
+                <a class="nav-link" href="notifications.html">
+                    <i class="material-icons pmd-list-icon pmd-sm md-light">notifications</i>
+                    <span class="media-body">Notifications</span>
+                </a>
+            </li>
+
+            <li class="nav-item ">
+                <a class="nav-link" href="mailbox.html">
+                    <i class="material-icons pmd-list-icon pmd-sm md-light">email</i>
+                    <span class="media-body">Mailbox</span>
+                </a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="email-templates.html">
+                    <i class="material-icons pmd-list-icon pmd-sm md-light">web</i>
+                    <span class="media-body">Email Templates</span>
+                </a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="calendar.html">
+                    <i class="material-icons pmd-list-icon pmd-sm md-light">calendar_today</i>
+                    <span class="media-body">Calendar</span>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" data-toggle="collapse" href="#thirdpartyelements">
+                    <i class="material-icons pmd-list-icon pmd-sm">pages</i>
+                    <span class="media-body">Other Pages</span>
+                    <div class="media-right media-bottom">
+                        <i class="material-icons md-18 pmd-accordion-arrow">expand_more</i>
+                    </div>
+                </a>
+                <!-- Submenu -->
+                <ul class="collapse" id="thirdpartyelements" data-parent="#basicSidebar">
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="typography.html">Typography</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="iconography.html">Iconography</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="search-results.html">Search Results</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="search-no-results-found.html">Search No Results Found</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="alert.html">Alerts and Warnings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="404.html">404</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="404-with-sidebar.html">404 with Sidebar</a>
+                    </li>
+                </ul>
+                <!-- End Submenu -->
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="settings.html">
+                    <i class="material-icons pmd-list-icon pmd-sm md-light">settings</i>
+                    <span class="media-body">Settings</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="faqs.html">
+                    <i class="material-icons pmd-list-icon pmd-sm md-light">help</i>
+                    <span class="media-body">FAQs</span>
+                </a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link pmd-ripple-effect" href="login.html">
+                    <i class="material-icons pmd-list-icon pmd-sm md-light">logout</i>
+                    <span class="media-body">Log Out</span>
+                </a>
+            </li>
+        </ul>
+        <!-- End Accordian Menu -->
+    </aside>
+    <!-- End Left Sidebar -->
+
+    <!----------------------------
+		Content Area
+ 	----------------------------->
+    <div id="content" class="pmd-content content-area">
+        <div class="d-flex align-items-center">
+            <div class="">
+                <!-- Page Title -->
+                <h1 class="h2 hide-large-desk">Patients</h1>
+
+                <!-- Breadcrumb -->
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb pmd-breadcrumb ">
+                        <li class="breadcrumb-item">
+                            <a href="dashboard.html">Dashboard</a>
+                        </li>
+                        <li class="breadcrumb-item active" aria-current="page">Patients</li>
+                    </ol>
+                </nav>
+                <!-- End Breadcrumb -->
+            </div>
+            <div class="ml-auto">
+                <ul class="nav nav-tabs border-0 mb-3">
+                    <li class="nav-item mr-2">
+                        <a title="Grid View"
+                            class="btn btn-outline-dark pmd-btn-fab pmd-ripple-effect nav-link btn-sm active"
+                            href="#gridView" aria-controls="gridView" role="tab" data-toggle="tab">
+                            <i class="material-icons">apps</i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a title="List View" class="btn btn-outline-dark pmd-btn-fab pmd-ripple-effect nav-link btn-sm"
+                            href="#listView" aria-controls="listView" role="tab" data-toggle="tab"
+                            id="nav-data-table-link">
+                            <i class="material-icons">format_list_bulleted</i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="tab-content">
+            <!-- Grid View -->
+            <div role="tabpanel" class="tab-pane active show" id="gridView">
+                <div class="row">
+
+                    <!-- Card View -->
+                    <div class="col-md-6 col-xl-4 col-12 d-flex">
+                        <div class="card pmd-card user-info-card">
+                            <!-- Card Header -->
+                            <div class="card-header pmd-card-border media align-items-center">
+                                <a class="pmd-avatar-list-img" href="patient-detail.html">
+                                    <img src="assets/images/profile-1.jpg" width="40" height="40" alt="Profile Picture">
+                                </a>
+                                <div class="media-body">
+                                    <h3 class="card-title">Nicholas Warren</h3>
+                                </div>
+                                <div class="media-action-btns">
+                                    <a href="patient-detail.html" title="Edit"
+                                        class="btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm">
+                                        <i class="material-icons">edit</i>
+                                    </a>
+                                    <a href="javascript:void(0);" title="Delete"
+                                        class="btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm"
+                                        data-target="#delete_patient_modal" data-toggle="modal">
+                                        <i class="material-icons">delete_outline</i>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Card Body Content -->
+                            <ul class="list-group pmd-card-list pmd-list row flex-row mx-0">
+                                <li class="list-group-item col-md-6 pr-md-2">
+                                    <label class="pmd-list-subtitle mb-1">Patient ID</label>
+                                    <h5 class="pmd-list-title">XYZ-101</h5>
+                                </li>
+                                <li class="list-group-item col-md-6">
+                                    <label class="pmd-list-subtitle mb-1 mb-0">Contact No.</label>
+                                    <h5 class="pmd-list-title">(934) 395 8661</h5>
+                                </li>
+                                <li class="list-group-item col-md-6 pr-md-2">
+                                    <label class="pmd-list-subtitle mb-1">Email ID</label>
+                                    <h5 class="pmd-list-title">
+                                        <a href="mailto:nicholas89@xyz.com">nicholas89@example.com</a>
+                                    </h5>
+                                </li>
+                                <li class="list-group-item col-md-6">
+                                    <label class="pmd-list-subtitle mb-1">Blood Group</label>
+                                    <h5 class="pmd-list-title">A+</h5>
+                                </li>
+                                <li class="list-group-item col-md-6">
+                                    <label class="pmd-list-subtitle mb-1">Last Visit</label>
+                                    <h5 class="pmd-list-title">25<sup>th</sup> April, 2019</h5>
+                                </li>
+                            </ul>
+                            <!-- Card Footer -->
+                            <div class="card-footer pmd-card-border">
+                                <a href="patient-detail.html"
+                                    class="btn btn-primary pmd-ripple-effect pmd-btn-flat">View Profile</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Card View -->
+
+                    <!-- Card View -->
+                    <div class="col-md-6 col-xl-4 col-12 d-flex">
+                        <div class="card pmd-card user-info-card">
+                            <!-- Card Header -->
+                            <div class="card-header pmd-card-border media align-items-center">
+                                <a class="pmd-avatar-list-img" href="patient-detail.html">
+                                    <img src="assets/images/profile-2.jpg" width="40" height="40" alt="Profile Picture">
+                                </a>
+                                <div class="media-body">
+                                    <h3 class="card-title">Melissa Ortega</h3>
+                                </div>
+                                <div class="media-action-btns">
+                                    <a href="patient-detail.html" title="Edit"
+                                        class="btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm">
+                                        <i class="material-icons">edit</i>
+                                    </a>
+                                    <a href="javascript:void(0);" title="Delete"
+                                        class="btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm"
+                                        data-target="#delete_patient_modal" data-toggle="modal">
+                                        <i class="material-icons">delete_outline</i>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Card Body Content -->
+                            <ul class="list-group pmd-card-list pmd-list row flex-row mx-0">
+                                <li class="list-group-item col-md-6 pr-md-2">
+                                    <label class="pmd-list-subtitle mb-1">Patient ID</label>
+                                    <h5 class="pmd-list-title">XYZ-102</h5>
+                                </li>
+                                <li class="list-group-item col-md-6">
+                                    <label class="pmd-list-subtitle mb-1 mb-0">Contact No.</label>
+                                    <h5 class="pmd-list-title">(179) 529 3882</h5>
+                                </li>
+                                <li class="list-group-item col-md-6 pr-md-2">
+                                    <label class="pmd-list-subtitle mb-1">Email ID</label>
+                                    <h5 class="pmd-list-title">
+                                        <a href="mailto:melissa-90@xyz.com">melissa-90@example.com</a>
+                                    </h5>
+                                </li>
+                                <li class="list-group-item col-md-6">
+                                    <label class="pmd-list-subtitle mb-1">Blood Group</label>
+                                    <h5 class="pmd-list-title">B+</h5>
+                                </li>
+                                <li class="list-group-item col-md-6">
+                                    <label class="pmd-list-subtitle mb-1">Last Visit</label>
+                                    <h5 class="pmd-list-title">25<sup>th</sup> March, 2019</h5>
+                                </li>
+                            </ul>
+                            <!-- Card Footer -->
+                            <div class="card-footer pmd-card-border">
+                                <a href="patient-detail.html"
+                                    class="btn btn-primary pmd-ripple-effect pmd-btn-flat">View Profile</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Card View -->
+
+                    <!-- Card View -->
+                    <div class="col-md-6 col-xl-4 col-12 d-flex">
+                        <div class="card pmd-card user-info-card">
+                            <!-- Card Header -->
+                            <div class="card-header pmd-card-border media align-items-center">
+                                <a class="pmd-avatar-list-img" href="patient-detail.html">
+                                    <img src="assets/images/profile-3.jpg" width="40" height="40" alt="Profile Picture">
+                                </a>
+                                <div class="media-body">
+                                    <h3 class="card-title">David Ortega</h3>
+                                </div>
+                                <div class="media-action-btns">
+                                    <a href="patient-detail.html" title="Edit"
+                                        class="btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm">
+                                        <i class="material-icons">edit</i>
+                                    </a>
+                                    <a href="javascript:void(0);" title="Delete"
+                                        class="btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm"
+                                        data-target="#delete_patient_modal" data-toggle="modal">
+                                        <i class="material-icons">delete_outline</i>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Card Body Content -->
+                            <ul class="list-group pmd-card-list pmd-list row flex-row mx-0">
+                                <li class="list-group-item col-md-6 pr-md-2">
+                                    <label class="pmd-list-subtitle mb-1">Patient ID</label>
+                                    <h5 class="pmd-list-title">XYZ-103</h5>
+                                </li>
+                                <li class="list-group-item col-md-6">
+                                    <label class="pmd-list-subtitle mb-1 mb-0">Contact No.</label>
+                                    <h5 class="pmd-list-title">(392) 132 5142</h5>
+                                </li>
+                                <li class="list-group-item col-md-6 pr-md-2">
+                                    <label class="pmd-list-subtitle mb-1">Email ID</label>
+                                    <h5 class="pmd-list-title">
+                                        <a href="mailto:david_123@xyz.com">david_123@example.com</a>
+                                    </h5>
+                                </li>
+                                <li class="list-group-item col-md-6">
+                                    <label class="pmd-list-subtitle mb-1">Blood Group</label>
+                                    <h5 class="pmd-list-title">o+</h5>
+                                </li>
+                                <li class="list-group-item col-md-6">
+                                    <label class="pmd-list-subtitle mb-1">Last Visit</label>
+                                    <h5 class="pmd-list-title">24<sup>th</sup> January, 2019</h5>
+                                </li>
+                            </ul>
+                            <!-- Card Footer -->
+                            <div class="card-footer pmd-card-border">
+                                <a href="patient-detail.html"
+                                    class="btn btn-primary pmd-ripple-effect pmd-btn-flat">View Profile</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Card View -->
+
+                    <!-- Card View -->
+                    <div class="col-md-6 col-xl-4 col-12 d-flex">
+                        <div class="card pmd-card user-info-card">
+                            <!-- Card Header -->
+                            <div class="card-header pmd-card-border media align-items-center">
+                                <a class="pmd-avatar-list-img" href="patient-detail.html">
+                                    <img src="assets/images/profile-4.jpg" width="40" height="40" alt="Profile Picture">
+                                </a>
+                                <div class="media-body">
+                                    <h3 class="card-title">Thomas Meyer</h3>
+                                </div>
+                                <div class="media-action-btns">
+                                    <a href="patient-detail.html" title="Edit"
+                                        class="btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm">
+                                        <i class="material-icons">edit</i>
+                                    </a>
+                                    <a href="javascript:void(0);" title="Delete"
+                                        class="btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm"
+                                        data-target="#delete_patient_modal" data-toggle="modal">
+                                        <i class="material-icons">delete_outline</i>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Card Body Content -->
+                            <ul class="list-group pmd-card-list pmd-list row flex-row mx-0">
+                                <li class="list-group-item col-md-6 pr-md-2">
+                                    <label class="pmd-list-subtitle mb-1">Patient ID</label>
+                                    <h5 class="pmd-list-title">XYZ-104</h5>
+                                </li>
+                                <li class="list-group-item col-md-6">
+                                    <label class="pmd-list-subtitle mb-1 mb-0">Contact No.</label>
+                                    <h5 class="pmd-list-title">(934) 395 8661</h5>
+                                </li>
+                                <li class="list-group-item col-md-6 pr-md-2">
+                                    <label class="pmd-list-subtitle mb-1">Email ID</label>
+                                    <h5 class="pmd-list-title">
+                                        <a href="mailto:thomas_91@xyz.com">thomas_91@example.com</a>
+                                    </h5>
+                                </li>
+                                <li class="list-group-item col-md-6">
+                                    <label class="pmd-list-subtitle mb-1">Blood Group</label>
+                                    <h5 class="pmd-list-title">A+</h5>
+                                </li>
+                                <li class="list-group-item col-md-6">
+                                    <label class="pmd-list-subtitle mb-1">Last Visit</label>
+                                    <h5 class="pmd-list-title">25<sup>th</sup> April, 2019</h5>
+                                </li>
+                            </ul>
+                            <!-- Card Footer -->
+                            <div class="card-footer pmd-card-border">
+                                <a href="patient-detail.html"
+                                    class="btn btn-primary pmd-ripple-effect pmd-btn-flat">View Profile</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Card View -->
+
+                    <!-- Card View -->
+                    <div class="col-md-6 col-xl-4 col-12 d-flex">
+                        <div class="card pmd-card user-info-card">
+                            <!-- Card Header -->
+                            <div class="card-header pmd-card-border media align-items-center">
+                                <a class="pmd-avatar-list-img" href="patient-detail.html">
+                                    <img src="assets/images/profile-5.jpg" width="40" height="40" alt="Profile Picture">
+                                </a>
+                                <div class="media-body">
+                                    <h3 class="card-title">Theresa Barrett</h3>
+                                </div>
+                                <div class="media-action-btns">
+                                    <a href="patient-detail.html" title="Edit"
+                                        class="btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm">
+                                        <i class="material-icons">edit</i>
+                                    </a>
+                                    <a href="javascript:void(0);" title="Delete"
+                                        class="btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm"
+                                        data-target="#delete_patient_modal" data-toggle="modal">
+                                        <i class="material-icons">delete_outline</i>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Card Body Content -->
+                            <ul class="list-group pmd-card-list pmd-list row flex-row mx-0">
+                                <li class="list-group-item col-md-6 pr-md-2">
+                                    <label class="pmd-list-subtitle mb-1">Patient ID</label>
+                                    <h5 class="pmd-list-title">XYZ-105</h5>
+                                </li>
+                                <li class="list-group-item col-md-6">
+                                    <label class="pmd-list-subtitle mb-1 mb-0">Contact No.</label>
+                                    <h5 class="pmd-list-title">(934) 395 8661</h5>
+                                </li>
+                                <li class="list-group-item col-md-6 pr-md-2">
+                                    <label class="pmd-list-subtitle mb-1">Email ID</label>
+                                    <h5 class="pmd-list-title">
+                                        <a href="mailto:theresa-93@xyz.com">theresa-93@example.com</a>
+                                    </h5>
+                                </li>
+                                <li class="list-group-item col-md-6">
+                                    <label class="pmd-list-subtitle mb-1">Blood Group</label>
+                                    <h5 class="pmd-list-title">A+</h5>
+                                </li>
+                                <li class="list-group-item col-md-6">
+                                    <label class="pmd-list-subtitle mb-1">Last Visit</label>
+                                    <h5 class="pmd-list-title">25<sup>th</sup> April, 2019</h5>
+                                </li>
+                            </ul>
+                            <!-- Card Footer -->
+                            <div class="card-footer pmd-card-border">
+                                <a href="patient-detail.html"
+                                    class="btn btn-primary pmd-ripple-effect pmd-btn-flat">View Profile</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Card View -->
+
+                    <!-- Card View -->
+                    <div class="col-md-6 col-xl-4 col-12 d-flex">
+                        <div class="card pmd-card user-info-card">
+                            <!-- Card Header -->
+                            <div class="card-header pmd-card-border media align-items-center">
+                                <a class="pmd-avatar-list-img" href="patient-detail.html">
+                                    <img src="assets/images/profile-6.jpg" width="40" height="40" alt="Profile Picture">
+                                </a>
+                                <div class="media-body">
+                                    <h3 class="card-title">Dylan Wallace</h3>
+                                </div>
+                                <div class="media-action-btns">
+                                    <a href="patient-detail.html" title="Edit"
+                                        class="btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm">
+                                        <i class="material-icons">edit</i>
+                                    </a>
+                                    <a href="javascript:void(0);" title="Delete"
+                                        class="btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm"
+                                        data-target="#delete_patient_modal" data-toggle="modal">
+                                        <i class="material-icons">delete_outline</i>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Card Body Content -->
+                            <ul class="list-group pmd-card-list pmd-list row flex-row mx-0">
+                                <li class="list-group-item col-md-6 pr-md-2">
+                                    <label class="pmd-list-subtitle mb-1">Patient ID</label>
+                                    <h5 class="pmd-list-title">XYZ-106</h5>
+                                </li>
+                                <li class="list-group-item col-md-6">
+                                    <label class="pmd-list-subtitle mb-1 mb-0">Contact No.</label>
+                                    <h5 class="pmd-list-title">(934) 395 8661</h5>
+                                </li>
+                                <li class="list-group-item col-md-6 pr-md-2">
+                                    <label class="pmd-list-subtitle mb-1">Email ID</label>
+                                    <h5 class="pmd-list-title">
+                                        <a href="mailto:dylan.wallace@xyz.com">dylan.wallace@example.com</a>
+                                    </h5>
+                                </li>
+                                <li class="list-group-item col-md-6">
+                                    <label class="pmd-list-subtitle mb-1">Blood Group</label>
+                                    <h5 class="pmd-list-title">A+</h5>
+                                </li>
+                                <li class="list-group-item col-md-6">
+                                    <label class="pmd-list-subtitle mb-1">Last Visit</label>
+                                    <h5 class="pmd-list-title">25<sup>th</sup> April, 2019</h5>
+                                </li>
+                            </ul>
+                            <!-- Card Footer -->
+                            <div class="card-footer pmd-card-border">
+                                <a href="patient-detail.html"
+                                    class="btn btn-primary pmd-ripple-effect pmd-btn-flat">View Profile</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Card View -->
+
+                    <div class="col-12 text-center">
+                        <button class="btn btn-secondary pmd-ripple-effect">Load More</button>
+                    </div>
+
+                </div>
+            </div>
+            <!-- End Grid View -->
+
+            <!-- List View -->
+            <div role="tabpanel" class="tab-pane" id="listView">
+                <!-- Data Table -->
+                <div class="card pmd-card pmd-data-table">
+                    <table id="patient-datatable" class="table pmd-table table-hover display dt-responsive nowrap"
+                        cellspacing="0" width="100%">
+                        <!-- Table Heading -->
+                        <thead class="">
+                            <tr>
+                                <th>No</th>
+                                <th>Name</th>
+                                <th>Patient ID</th>
+                                <th>Email ID</th>
+                                <th>Contact No.</th>
+                                <th>Last Visit</th>
+                                <th>Blood Group</th>
+                                <th>Status</th>
+                                <th></th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td data-title="No">1</td>
+                                <td data-title="Name">
+                                    <div class='d-flex align-items-center'>
+                                        <img src='assets/images/profile-1.jpg' alt='Profile Image'
+                                            class='rounded-circle mr-3' width='40' height='40'>
+                                        <div class='media-body'>Nicholas Warren</div>
+                                    </div>
+                                </td>
+                                <td data-title="Patient ID">XYZ-1001</td>
+                                <td data-title="Email ID">
+                                    <a href="mailto:nicholas89@example.com">nicholas89@example.com</a>
+                                </td>
+                                <td data-title="Contact No.">(934) 395 8661</td>
+                                <td data-title="Last Visit">25<sup>th</sup> April, 2019</td>
+                                <td data-title="Blood Group">A+</td>
+                                <td data-title="Status">
+                                    <span class='badge badge-pill pmd-badge-outline-secondary'>Under Treatment</span>
+                                </td>
+                                <td class=""></td>
+                                <td data-title="Actions">
+                                    <a href='patient-detail.html'
+                                        class='btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm mr-2'
+                                        title='View Profile'>
+                                        <i class='material-icons'>visibility</i>
+                                    </a>
+                                    <a href='patient-detail.html'
+                                        class='btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm mr-2'
+                                        title='Edit'>
+                                        <i class='material-icons'>edit</i>
+                                    </a>
+                                    <a href='javascript:void(0);'
+                                        class='btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm'
+                                        data-target='#delete_patient_modal' data-toggle='modal' title='Delete'>
+                                        <i class='material-icons'>delete_outline</i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-title="No">2</td>
+                                <td data-title="Name">
+                                    <div class='d-flex align-items-center'>
+                                        <img src='assets/images/profile-2.jpg' alt='Profile Image'
+                                            class='rounded-circle mr-3' width='40' height='40'>
+                                        <div class='media-body'>Melissa Ortega</div>
+                                    </div>
+                                </td>
+                                <td data-title="Patient ID">XYZ-1002</td>
+                                <td data-title="Email ID">
+                                    <a href="mailto:melissa-90@example.com">melissa-90@example.com</a>
+                                </td>
+                                <td data-title="Contact No.">(179) 529 3882</td>
+                                <td data-title="Last Visit">25<sup>th</sup> March, 2019</td>
+                                <td data-title="Blood Group">B+</td>
+                                <td data-title="Status">
+                                    <span class='badge badge-pill pmd-badge-outline-secondary'>Under Treatment</span>
+                                </td>
+                                <td class=""></td>
+                                <td data-title="Actions">
+                                    <a href='patient-detail.html'
+                                        class='btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm mr-2'
+                                        title='View Profile'>
+                                        <i class='material-icons'>visibility</i>
+                                    </a>
+                                    <a href='patient-detail.html'
+                                        class='btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm mr-2'
+                                        title='Edit'>
+                                        <i class='material-icons'>edit</i>
+                                    </a>
+                                    <a href='javascript:void(0);'
+                                        class='btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm'
+                                        data-target='#delete_patient_modal' data-toggle='modal' title='Delete'>
+                                        <i class='material-icons'>delete_outline</i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-title="No">3</td>
+                                <td data-title="Name">
+                                    <div class='d-flex align-items-center'>
+                                        <img src='assets/images/profile-3.jpg' alt='Profile Image'
+                                            class='rounded-circle mr-3' width='40' height='40'>
+                                        <div class='media-body'>David Sims</div>
+                                    </div>
+                                </td>
+                                <td data-title="Patient ID">XYZ-1003</td>
+                                <td data-title="Email ID">
+                                    <a href="mailto:david_sims@example.com">david_sims@example.com</a>
+                                </td>
+                                <td data-title="Contact No.">(392) 132 5142</td>
+                                <td data-title="Last Visit">25<sup>th</sup> January, 2019</td>
+                                <td data-title="Blood Group">O+</td>
+                                <td data-title="Status">
+                                    <span class='badge badge-pill pmd-badge-outline-success'>Cured</span>
+                                </td>
+                                <td class=""></td>
+                                <td data-title="Actions">
+                                    <a href='patient-detail.html'
+                                        class='btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm mr-2'
+                                        title='View Profile'>
+                                        <i class='material-icons'>visibility</i>
+                                    </a>
+                                    <a href='patient-detail.html'
+                                        class='btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm mr-2'
+                                        title='Edit'>
+                                        <i class='material-icons'>edit</i>
+                                    </a>
+                                    <a href='javascript:void(0);'
+                                        class='btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm'
+                                        data-target='#delete_patient_modal' data-toggle='modal' title='Delete'>
+                                        <i class='material-icons'>delete_outline</i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-title="No">4</td>
+                                <td data-title="Name">
+                                    <div class='d-flex align-items-center'>
+                                        <img src='assets/images/profile-4.jpg' alt='Profile Image'
+                                            class='rounded-circle mr-3' width='40' height='40'>
+                                        <div class='media-body'>Thomas Meyer</div>
+                                    </div>
+                                </td>
+                                <td data-title="Patient ID">XYZ-1004</td>
+                                <td data-title="Email ID">
+                                    <a href="mailto:thomas_91@example.com">thomas_91@example.com</a>
+                                </td>
+                                <td data-title="Contact No.">(934) 295 5621</td>
+                                <td data-title="Last Visit">15<sup>th</sup> March, 2019</td>
+                                <td data-title="Blood Group">B+</td>
+                                <td data-title="Status">
+                                    <span class='badge badge-pill pmd-badge-outline-secondary'>Under Treatment</span>
+                                </td>
+                                <td class=""></td>
+                                <td data-title="Actions">
+                                    <a href='patient-detail.html'
+                                        class='btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm mr-2'
+                                        title='View Profile'>
+                                        <i class='material-icons'>visibility</i>
+                                    </a>
+                                    <a href='patient-detail.html'
+                                        class='btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm mr-2'
+                                        title='Edit'>
+                                        <i class='material-icons'>edit</i>
+                                    </a>
+                                    <a href='javascript:void(0);'
+                                        class='btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm'
+                                        data-target='#delete_patient_modal' data-toggle='modal' title='Delete'>
+                                        <i class='material-icons'>delete_outline</i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-title="No">5</td>
+                                <td data-title="Name">
+                                    <div class='d-flex align-items-center'>
+                                        <img src='assets/images/profile-5.jpg' alt='Profile Image'
+                                            class='rounded-circle mr-3' width='40' height='40'>
+                                        <div class='media-body'>Theresa Barrett</div>
+                                    </div>
+                                </td>
+                                <td data-title="Patient ID">XYZ-1005</td>
+                                <td data-title="Email ID">
+                                    <a href="mailto:theresa-93@example.com">theresa-93@example.com</a>
+                                </td>
+                                <td data-title="Contact No.">(179) 529 3122</td>
+                                <td data-title="Last Visit">11<sup>th</sup> March, 2019</td>
+                                <td data-title="Blood Group">A+</td>
+                                <td data-title="Status">
+                                    <span class='badge badge-pill pmd-badge-outline-secondary'>Under Treatment</span>
+                                </td>
+                                <td class=""></td>
+                                <td data-title="Actions">
+                                    <a href='patient-detail.html'
+                                        class='btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm mr-2'
+                                        title='View Profile'>
+                                        <i class='material-icons'>visibility</i>
+                                    </a>
+                                    <a href='patient-detail.html'
+                                        class='btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm mr-2'
+                                        title='Edit'>
+                                        <i class='material-icons'>edit</i>
+                                    </a>
+                                    <a href='javascript:void(0);'
+                                        class='btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm'
+                                        data-target='#delete_patient_modal' data-toggle='modal' title='Delete'>
+                                        <i class='material-icons'>delete_outline</i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-title="No">6</td>
+                                <td data-title="Name">
+                                    <div class='d-flex align-items-center'>
+                                        <img src='assets/images/profile-6.jpg' alt='Profile Image'
+                                            class='rounded-circle mr-3' width='40' height='40'>
+                                        <div class='media-body'>Dylan Wallace</div>
+                                    </div>
+                                </td>
+                                <td data-title="Patient ID">XYZ-1006</td>
+                                <td data-title="Email ID">
+                                    <a href="mailto:dylan.wallace@example.com">dylan.wallace@example.com</a>
+                                </td>
+                                <td data-title="Contact No.">(392) 132 5142</td>
+                                <td data-title="Last Visit">28<sup>th</sup> January, 2019</td>
+                                <td data-title="Blood Group">O+</td>
+                                <td data-title="Status">
+                                    <span class='badge badge-pill pmd-badge-outline-success'>Cured</span>
+                                </td>
+                                <td class=""></td>
+                                <td data-title="Actions">
+                                    <a href='patient-detail.html'
+                                        class='btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm mr-2'
+                                        title='View Profile'>
+                                        <i class='material-icons'>visibility</i>
+                                    </a>
+                                    <a href='patient-detail.html'
+                                        class='btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm mr-2'
+                                        title='Edit'>
+                                        <i class='material-icons'>edit</i>
+                                    </a>
+                                    <a href='javascript:void(0);'
+                                        class='btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm'
+                                        data-target='#delete_patient_modal' data-toggle='modal' title='Delete'>
+                                        <i class='material-icons'>delete_outline</i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-title="No">7</td>
+                                <td data-title="Name">
+                                    <div class='d-flex align-items-center'>
+                                        <img src='assets/images/profile-7.jpg' alt='Profile Image'
+                                            class='rounded-circle mr-3' width='40' height='40'>
+                                        <div class='media-body'>Jean Delgado</div>
+                                    </div>
+                                </td>
+                                <td data-title="Patient ID">XYZ-1007</td>
+                                <td data-title="Email ID">
+                                    <a href="mailto:jean.delgado@example.com">jean.delgado@example.com</a>
+                                </td>
+                                <td data-title="Contact No.">(934) 395 8661</td>
+                                <td data-title="Last Visit">24<sup>th</sup> January, 2019</td>
+                                <td data-title="Blood Group">A+</td>
+                                <td data-title="Status">
+                                    <span class='badge badge-pill pmd-badge-outline-secondary'>Under Treatment</span>
+                                </td>
+                                <td class=""></td>
+                                <td data-title="Actions">
+                                    <a href='patient-detail.html'
+                                        class='btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm mr-2'
+                                        title='View Profile'>
+                                        <i class='material-icons'>visibility</i>
+                                    </a>
+                                    <a href='patient-detail.html'
+                                        class='btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm mr-2'
+                                        title='Edit'>
+                                        <i class='material-icons'>edit</i>
+                                    </a>
+                                    <a href='javascript:void(0);'
+                                        class='btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm'
+                                        data-target='#delete_patient_modal' data-toggle='modal' title='Delete'>
+                                        <i class='material-icons'>delete_outline</i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-title="No">8</td>
+                                <td data-title="Name">
+                                    <div class='d-flex align-items-center'>
+                                        <img src='assets/images/profile-8.jpg' alt='Profile Image'
+                                            class='rounded-circle mr-3' width='40' height='40'>
+                                        <div class='media-body'>Mildred Williams</div>
+                                    </div>
+                                </td>
+                                <td data-title="Patient ID">XYZ-1008</td>
+                                <td data-title="Email ID">
+                                    <a href="mailto:mildred.williams@example.com">mildred.williams@example.com</a>
+                                </td>
+                                <td data-title="Contact No.">(179) 529 3882</td>
+                                <td data-title="Last Visit">19<sup>th</sup> January, 2019</td>
+                                <td data-title="Blood Group">B+</td>
+                                <td data-title="Status">
+                                    <span class='badge badge-pill pmd-badge-outline-success'>Cured</span>
+                                </td>
+                                <td class=""></td>
+                                <td data-title="Actions">
+                                    <a href='patient-detail.html'
+                                        class='btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm mr-2'
+                                        title='View Profile'>
+                                        <i class='material-icons'>visibility</i>
+                                    </a>
+                                    <a href='patient-detail.html'
+                                        class='btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm mr-2'
+                                        title='Edit'>
+                                        <i class='material-icons'>edit</i>
+                                    </a>
+                                    <a href='javascript:void(0);'
+                                        class='btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm'
+                                        data-target='#delete_patient_modal' data-toggle='modal' title='Delete'>
+                                        <i class='material-icons'>delete_outline</i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-title="No">9</td>
+                                <td data-title="Name">
+                                    <div class='d-flex align-items-center'>
+                                        <img src='assets/images/profile-9.jpg' alt='Profile Image'
+                                            class='rounded-circle mr-3' width='40' height='40'>
+                                        <div class='media-body'>Judy Banks</div>
+                                    </div>
+                                </td>
+                                <td data-title="Patient ID">XYZ-1009</td>
+                                <td data-title="Email ID">
+                                    <a href="mailto:judy.banks@example.com">judy.banks@example.com</a>
+                                </td>
+                                <td data-title="Contact No.">(179) 529 3882</td>
+                                <td data-title="Last Visit">11<sup>th</sup> January, 2019</td>
+                                <td data-title="Blood Group">B+</td>
+                                <td data-title="Status">
+                                    <span class='badge badge-pill pmd-badge-outline-secondary'>Under Treatment</span>
+                                </td>
+                                <td class=""></td>
+                                <td data-title="Actions">
+                                    <a href='patient-detail.html'
+                                        class='btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm mr-2'
+                                        title='View Profile'>
+                                        <i class='material-icons'>visibility</i>
+                                    </a>
+                                    <a href='patient-detail.html'
+                                        class='btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm mr-2'
+                                        title='Edit'>
+                                        <i class='material-icons'>edit</i>
+                                    </a>
+                                    <a href='javascript:void(0);'
+                                        class='btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm'
+                                        data-target='#delete_patient_modal' data-toggle='modal' title='Delete'>
+                                        <i class='material-icons'>delete_outline</i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-title="No">10</td>
+                                <td data-title="Name">
+                                    <div class='d-flex align-items-center'>
+                                        <img src='assets/images/profile-10.jpg' alt='Profile Image'
+                                            class='rounded-circle mr-3' width='40' height='40'>
+                                        <div class='media-body'>Tiffany Chapman</div>
+                                    </div>
+                                </td>
+                                <td data-title="Patient ID">XYZ-1010</td>
+                                <td data-title="Email ID">
+                                    <a href="mailto:tiffany.chapman@example.com">tiffany.chapman@example.com</a>
+                                </td>
+                                <td data-title="Contact No.">(179) 529 3882</td>
+                                <td data-title="Last Visit">10<sup>th</sup> January, 2019</td>
+                                <td data-title="Blood Group">B+</td>
+                                <td data-title="Status">
+                                    <span class='badge badge-pill pmd-badge-outline-success'>Cured</span>
+                                </td>
+                                <td class=""></td>
+                                <td data-title="Actions">
+                                    <a href='patient-detail.html'
+                                        class='btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm mr-2'
+                                        title='View Profile'>
+                                        <i class='material-icons'>visibility</i>
+                                    </a>
+                                    <a href='patient-detail.html'
+                                        class='btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm mr-2'
+                                        title='Edit'>
+                                        <i class='material-icons'>edit</i>
+                                    </a>
+                                    <a href='javascript:void(0);'
+                                        class='btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm'
+                                        data-target='#delete_patient_modal' data-toggle='modal' title='Delete'>
+                                        <i class='material-icons'>delete_outline</i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-title="No">11</td>
+                                <td data-title="Name">
+                                    <div class='d-flex align-items-center'>
+                                        <img src='assets/images/profile-11.jpg' alt='Profile Image'
+                                            class='rounded-circle mr-3' width='40' height='40'>
+                                        <div class='media-body'>Maria Watson</div>
+                                    </div>
+                                </td>
+                                <td data-title="Patient ID">XYZ-1011</td>
+                                <td data-title="Email ID">
+                                    <a href="mailto:maria.watson@example.com">maria.watson@example.com</a>
+                                </td>
+                                <td data-title="Contact No.">(934) 395 8661</td>
+                                <td data-title="Last Visit">28<sup>th</sup> December, 2019</td>
+                                <td data-title="Blood Group">A+</td>
+                                <td data-title="Status">
+                                    <span class='badge badge-pill pmd-badge-outline-success'>Cured</span>
+                                </td>
+                                <td class=""></td>
+                                <td data-title="Actions">
+                                    <a href='patient-detail.html'
+                                        class='btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm mr-2'
+                                        title='View Profile'>
+                                        <i class='material-icons'>visibility</i>
+                                    </a>
+                                    <a href='patient-detail.html'
+                                        class='btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm mr-2'
+                                        title='Edit'>
+                                        <i class='material-icons'>edit</i>
+                                    </a>
+                                    <a href='javascript:void(0);'
+                                        class='btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm'
+                                        data-target='#delete_patient_modal' data-toggle='modal' title='Delete'>
+                                        <i class='material-icons'>delete_outline</i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-title="No">12</td>
+                                <td data-title="Name">
+                                    <div class='d-flex align-items-center'>
+                                        <img src='assets/images/profile-12.jpg' alt='Profile Image'
+                                            class='rounded-circle mr-3' width='40' height='40'>
+                                        <div class='media-body'>Lisa Rivera</div>
+                                    </div>
+                                </td>
+                                <td data-title="Patient ID">XYZ-1012</td>
+                                <td data-title="Email ID">
+                                    <a href="mailto:lisa.rivera@example.com">lisa.rivera@example.com</a>
+                                </td>
+                                <td data-title="Contact No.">(179) 529 3882</td>
+                                <td data-title="Last Visit">21<sup>th</sup> December, 2019</td>
+                                <td data-title="Blood Group">B+</td>
+                                <td data-title="Status">
+                                    <span class='badge badge-pill pmd-badge-outline-success'>Cured</span>
+                                </td>
+                                <td class=""></td>
+                                <td data-title="Actions">
+                                    <a href='patient-detail.html'
+                                        class='btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm mr-2'
+                                        title='View Profile'>
+                                        <i class='material-icons'>visibility</i>
+                                    </a>
+                                    <a href='patient-detail.html'
+                                        class='btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm mr-2'
+                                        title='Edit'>
+                                        <i class='material-icons'>edit</i>
+                                    </a>
+                                    <a href='javascript:void(0);'
+                                        class='btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm'
+                                        data-target='#delete_patient_modal' data-toggle='modal' title='Delete'>
+                                        <i class='material-icons'>delete_outline</i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-title="No">13</td>
+                                <td data-title="Name">
+                                    <div class='d-flex align-items-center'>
+                                        <img src='assets/images/profile-13.jpg' alt='Profile Image'
+                                            class='rounded-circle mr-3' width='40' height='40'>
+                                        <div class='media-body'>Carolyn Payne</div>
+                                    </div>
+                                </td>
+                                <td data-title="Patient ID">XYZ-1013</td>
+                                <td data-title="Email ID">
+                                    <a href="mailto:carolyn.payne@example.com">carolyn.payne@example.com</a>
+                                </td>
+                                <td data-title="Contact No.">(392) 132 5142</td>
+                                <td data-title="Last Visit">18<sup>th</sup> December, 2019</td>
+                                <td data-title="Blood Group">A+</td>
+                                <td data-title="Status">
+                                    <span class='badge badge-pill pmd-badge-outline-success'>Cured</span>
+                                </td>
+                                <td class=""></td>
+                                <td data-title="Actions">
+                                    <a href='patient-detail.html'
+                                        class='btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm mr-2'
+                                        title='View Profile'>
+                                        <i class='material-icons'>visibility</i>
+                                    </a>
+                                    <a href='patient-detail.html'
+                                        class='btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm mr-2'
+                                        title='Edit'>
+                                        <i class='material-icons'>edit</i>
+                                    </a>
+                                    <a href='javascript:void(0);'
+                                        class='btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm'
+                                        data-target='#delete_patient_modal' data-toggle='modal' title='Delete'>
+                                        <i class='material-icons'>delete_outline</i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-title="No">14</td>
+                                <td data-title="Name">
+                                    <div class='d-flex align-items-center'>
+                                        <img src='assets/images/profile-14.jpg' alt='Profile Image'
+                                            class='rounded-circle mr-3' width='40' height='40'>
+                                        <div class='media-body'>Brian Obrien</div>
+                                    </div>
+                                </td>
+                                <td data-title="Patient ID">XYZ-1014</td>
+                                <td data-title="Email ID">
+                                    <a href="mailto:brian.obrien@example.com">brian.obrien@example.com</a>
+                                </td>
+                                <td data-title="Contact No.">(934) 295 8621</td>
+                                <td data-title="Last Visit">16<sup>th</sup> December, 2019</td>
+                                <td data-title="Blood Group">B+</td>
+                                <td data-title="Status">
+                                    <span class='badge badge-pill pmd-badge-outline-success'>Cured</span>
+                                </td>
+                                <td class=""></td>
+                                <td data-title="Actions">
+                                    <a href='patient-detail.html'
+                                        class='btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm mr-2'
+                                        title='View Profile'>
+                                        <i class='material-icons'>visibility</i>
+                                    </a>
+                                    <a href='patient-detail.html'
+                                        class='btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm mr-2'
+                                        title='Edit'>
+                                        <i class='material-icons'>edit</i>
+                                    </a>
+                                    <a href='javascript:void(0);'
+                                        class='btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm'
+                                        data-target='#delete_patient_modal' data-toggle='modal' title='Delete'>
+                                        <i class='material-icons'>delete_outline</i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-title="No">15</td>
+                                <td data-title="Name">
+                                    <div class='d-flex align-items-center'>
+                                        <img src='assets/images/profile-15.jpg' alt='Profile Image'
+                                            class='rounded-circle mr-3' width='40' height='40'>
+                                        <div class='media-body'>Alan James</div>
+                                    </div>
+                                </td>
+                                <td data-title="Patient ID">XYZ-1015</td>
+                                <td data-title="Email ID">
+                                    <a href="mailto:alan.james@example.com">alan.james@example.com</a>
+                                </td>
+                                <td data-title="Contact No.">(134) 315 2661</td>
+                                <td data-title="Last Visit">14<sup>th</sup> December, 2019</td>
+                                <td data-title="Blood Group">AB+</td>
+                                <td data-title="Status">
+                                    <span class='badge badge-pill pmd-badge-outline-success'>Cured</span>
+                                </td>
+                                <td class=""></td>
+                                <td data-title="Actions">
+                                    <a href='patient-detail.html'
+                                        class='btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm mr-2'
+                                        title='View Profile'>
+                                        <i class='material-icons'>visibility</i>
+                                    </a>
+                                    <a href='patient-detail.html'
+                                        class='btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm mr-2'
+                                        title='Edit'>
+                                        <i class='material-icons'>edit</i>
+                                    </a>
+                                    <a href='javascript:void(0);'
+                                        class='btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm'
+                                        data-target='#delete_patient_modal' data-toggle='modal' title='Delete'>
+                                        <i class='material-icons'>delete_outline</i>
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- End Data Table -->
+            </div>
+            <!-- End List View -->
+
+        </div>
+    </div>
+    <!-- End Content Area -->
+
+    <!----------------------------
+		Footer 
+ 	----------------------------->
+    <footer class="pmd-footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 align-self-center">
+                    <div class="pmd-site-info">
+                        © <span class="auto-update-year"></span> A <a href="https://pro.propeller.in/"
+                            target="_blank"><strong>Propeller Pro </strong></a> Theme
+                    </div>
+                </div>
+            </div>
+        </div> <!-- End Container -->
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Add button -->
+    <div class="menu list-view pmd-floating-action" role="navigation">
+        <a class="pmd-floating-action-btn btn pmd-btn-fab pmd-btn-raised pmd-ripple-effect btn-primary text-white pmd-sidebar-toggle"
+            href="patient-add.html" data-title="Add Patient">
+            <i class="material-icons">add</i>
+        </a>
+    </div>
+    <!-- End Add button -->
+
+    <!----------------------------
+		Modal | Delete Patient
+ 	----------------------------->
+    <div tabindex="-1" class="modal pmd-modal text-center delete-modal" id="delete_patient_modal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header justify-content-center">
+                    <i class="material-icons md-danger-circle pmd-icon-circle pmd-icon-md">
+                        <strong>error_outline</strong>
+                    </i>
+                </div>
+                <!-- Modal Body Content -->
+                <div class="modal-body">
+                    <h3 class="modal-title mb-2">Are you sure?</h3>
+                    <p class="mb-4">Do you really want to delete Patient?<br>This action cannot be
+                        undone.</p>
+                    <a href="javascript:void(0);" class="btn pmd-btn-raised btn-danger pmd-ripple-effect mr-2"
+                        title="Delete" data-dismiss="modal">Delete</a>
+                    <a href="javascript:void(0);" class="btn btn-outline-danger pmd-ripple-effect" title="Cancel"
+                        data-dismiss="modal">Cancel</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Modal | Delete Patient -->
+
+    <!-- build:include snippets/js-files-patient-list-datatable.html -->
+    <!-- /build -->
+
+    <!-- build:remove -->
+    <!--Admin js-->
+    <script type="text/javascript" src="assets/js/ehealthcare-admin-compress.min.js"></script>
+    <!-- /build -->
+    <script>
+        $(document).ready(function () {
+            $('#nav-data-table-link').on('shown.bs.tab', function (e) {
+                $('#patient-datatable').DataTable({
+                    responsive: {
+                        details: {
+                            type: 'column',
+                            target: 'tr'
+                        }
+                    },
+                    order: [0, 'asc'],
+                    columnDefs: [{
+                            width: "40px",
+                            targets: 0
+                        },
+                        {
+                            responsivePriority: 1,
+                            targets: 1
+                        },
+                        {
+                            className: 'control',
+                            targets: 8
+                        },
+                        {
+                            width: "160px",
+                            orderable: false,
+                            targets: 9
+                        }
+                    ],
+                    bFilter: true,
+                    bLengthChange: true,
+                    pagingType: "simple",
+                    "paging": true,
+                    "bDestroy": true,
+                    "searching": true,
+                    "language": {
+                        "info": " _START_ - _END_ of _TOTAL_ ",
+                        "sLengthMenu": "<span class='custom-select-title'>Rows per page:</span> <span class='pmd-custom-select'> _MENU_ </span>",
+                        "sSearch": "",
+                        "sSearchPlaceholder": "Search",
+                        "paginate": {
+                            "sNext": " ",
+                            "sPrevious": " "
+                        }
+                    },
+                    dom: "<'card-header d-md-flex flex-row'<'data-table-title mb-3'><'pmd-textfield datatable-search pmd-textfield-outline ml-sm-auto'f>>" +
+                        "<'row'<'col-sm-12'tr>>" +
+                        "<'card-footer' <'pmd-datatable-pagination' l i p>>"
+                });
+
+                /// Select value
+                $('#patient-datatable_wrapper .custom-select-info').hide();
+                var table = $('#patient-datatable').DataTable();
+                var total = table.rows().count();
+                $("#patient-datatable_wrapper .data-table-title").html(
+                    '<h2 class="card-title">Total Rows: ' + total + '</h2>');
+                $("#patient-datatable_wrapper .custom-select-action").html(
+                    '<button class="btn btn-sm pmd-btn-fab pmd-btn-flat pmd-ripple-effect btn-primary" type="button"><i class="material-icons pmd-sm">delete</i></button><button class="btn btn-sm pmd-btn-fab pmd-btn-flat pmd-ripple-effect btn-primary" type="button"><i class="material-icons pmd-sm">more_vert</i></button>'
+                );
+
+            });
+        });
+    </script>
+</body>
+
+
+<!-- Mirrored from themes.propeller.in/bootstrap4/html/e-health-care-admin-theme/patient-list.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 14 Aug 2023 07:48:43 GMT -->
+</html>

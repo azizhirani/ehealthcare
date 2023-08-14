@@ -1,0 +1,1519 @@
+<!doctype html>
+<html lang="en-US">
+
+
+<!-- Mirrored from themes.propeller.in/bootstrap4/html/e-health-care-admin-theme/department-list.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 14 Aug 2023 07:48:39 GMT -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+    <title>e-Health Care Admin HTML Theme - Department Types Template</title>
+    <meta name="description" content="Department Types Template. e-Health Care Admin Theme is a multipurpose and fully responsive Bootstrap 4 and Material Design based Admin HTML Template by Propeller designed mainly for Clinics, Hospitals, Dentists and more such applications related to health care." />
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico">
+
+    <!-- Google icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Rubik and Open sans Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700|Open+Sans:300,400,600,700"
+        rel="stylesheet">
+
+    <!-- build:remove -->
+    <!-- e-Health Care Admin Theme CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/ehealthcare-admin-compress.min.css">
+    <!-- /build -->
+
+    <!-- build:include snippets/css-files-department-list-datatable.html -->
+    <!-- /build -->
+
+    <!-- build:remove -->
+    <!--Google Analytics code-->
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script',
+            '../bootstrap4-admin-theme/assets/js/analytics.js', 'ga');
+
+        ga('create', 'UA-124615-22', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+    <!-- Canonical Tag -->
+    <link rel="canonical" href="hthttp://themes.propeller.in/bootstrap4/html/e-health-care-admin-theme/department-list.html" />
+    <!-- /build -->
+
+</head>
+
+<body>
+
+    <!----------------------------
+		Navbar
+ 	----------------------------->
+    <nav class="navbar navbar-expand-xl fixed-top navbar-light bg-white pmd-navbar pmd-z-depth-light-2">
+        <a href="javascript:void(0);" data-target="basicSidebar" data-placement="left" data-position="slidepush"
+            is-open="true" is-open-width="1300"
+            class="btn btn-sm pmd-btn-fab pmd-btn-flat pmd-ripple-effect pmd-sidebar-toggle humburger-menu">
+            <i class="material-icons md-dark md-inactive">menu</i>
+        </a>
+
+        <!-- Navbar Logo for Responsive view -->
+        <div class="navbar-header hide-large-desk p-0">
+            <a class="navbar-brand navbar-custom-brand" href="dashboard.html">
+                <img src="assets/images/logo.png" alt="Logo" class="img-fluid" width="120">
+            </a>
+        </div>
+
+        <!-- Page Title for Desktop View -->
+        <div class="show-large-desk">
+            <h1 class="h2 mb-0">Departments</h1>
+        </div>
+
+        <!-- Right Side Menu -->
+        <div class="pmd-navbar-right-icon ml-auto">
+
+            <!-- Global Search Field -->
+            <div class="nav-item d-inline-block global-search">
+                <a class="btn btn-sm pmd-btn-fab pmd-btn-flat search-form-open" href="javascript:void(0);">
+                    <i class="material-icons md-dark md-inactive">search</i>
+                </a>
+                <form class="search-form" method="POST" id="searchform" action="https://themes.propeller.in/bootstrap4/html/e-health-care-admin-theme/search-results.html">
+                    <div class="form-group pmd-textfield mb-0 pmd-textfield-outline">
+                        <input type="text" class="form-control pr-5" id="globalSearch" aria-describedby="globalSearch"
+                            placeholder="Search & Enter">
+                        <a class="btn btn-sm pmd-btn-fab pmd-btn-flat search-form-close" href="javascript:void(0);">
+                            <i class="material-icons md-dark md-inactive">close</i>
+                        </a>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Email Dropdown -->
+            <div class="nav-item d-inline-block dropdown pmd-dropdown">
+                <a href="javascript:void(0);" class="btn btn-sm pmd-btn-fab pmd-btn-flat" id="emailDropdown"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Emails">
+                    <i data-badge="5"
+                        class="material-icons pmd-badge pmd-badge-overlap pmd-badge-secondary md-dark md-inactive pmd-sm">
+                        mail_outline
+                    </i>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right notifications-dropdown" aria-labelledby="emailDropdown">
+                    <div class="card pmd-card mb-0">
+                        <div class="card-header d-flex w-100 justify-content-between pmd-card-border">
+                            <h3 class="pmd-list-title mb-0">Emails</h3>
+                            <a href="javascript:void(0);" class="text-secondary small">2 New Emails</a>
+                        </div>
+                        <div class="list-group pmd-list pmd-list-border m-0">
+                            <a class="list-group-item d-block unread" href="javascript:void(0);">
+                                <div class="media">
+                                    <span class="pmd-avatar-list-img">
+                                        <img alt="Profile Picture" data-src="holder.js/40x40" class="img-fluid"
+                                            src="assets/images/profile-1.jpg" data-holder-rendered="true">
+                                    </span>
+                                    <div class="media-body">
+                                        <h5 class="pmd-list-title">Brian Young</h5>
+                                        <p class="small text-dark mb-0">Desktop Application developer expert</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="list-group-item d-block unread" href="javascript:void(0);">
+                                <div class="media">
+                                    <span class="pmd-avatar-list-img">
+                                        <img alt="Profile Picture" data-src="holder.js/40x40" class="img-fluid"
+                                            src="assets/images/profile-2.jpg" data-holder-rendered="true">
+                                    </span>
+                                    <div class="media-body">
+                                        <h5 class="pmd-list-title">Diana Harris</h5>
+                                        <p class="small text-dark mb-0">Website speed issues</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="list-group-item d-block" href="javascript:void(0);">
+                                <div class="media">
+                                    <span class="pmd-avatar-list-img">
+                                        <img alt="Profile Picture" data-src="holder.js/40x40" class="img-fluid"
+                                            src="assets/images/profile-3.jpg" data-holder-rendered="true">
+                                    </span>
+                                    <div class="media-body">
+                                        <h5 class="pmd-list-title">Phillip Turner</h5>
+                                        <p class="small text-dark mb-0">Website Image Optimization</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="list-group-item d-block" href="javascript:void(0);">
+                                <div class="media">
+                                    <span class="pmd-avatar-list-img">
+                                        <img alt="Profile Picture" data-src="holder.js/40x40" class="img-fluid"
+                                            src="assets/images/profile-4.jpg" data-holder-rendered="true">
+                                    </span>
+                                    <div class="media-body">
+                                        <h5 class="pmd-list-title">Harold Harris</h5>
+                                        <p class="small text-dark mb-0">Large size image loading issue</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="list-group-item d-block" href="javascript:void(0);">
+                                <div class="media">
+                                    <span class="pmd-avatar-list-img">
+                                        <img alt="Profile Picture" data-src="holder.js/40x40" class="img-fluid"
+                                            src="assets/images/profile-5.jpg" data-holder-rendered="true">
+                                    </span>
+                                    <div class="media-body">
+                                        <h5 class="pmd-list-title">Rachel Freeman</h5>
+                                        <p class="small text-dark mb-0">Add new feature in Calendar</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="list-group-item d-block" href="javascript:void(0);">
+                                <div class="media">
+                                    <span class="pmd-avatar-list-img">
+                                        <img alt="Profile Picture" data-src="holder.js/40x40" class="img-fluid"
+                                            src="assets/images/profile-6.jpg" data-holder-rendered="true">
+                                    </span>
+                                    <div class="media-body">
+                                        <h5 class="pmd-list-title">John Smith</h5>
+                                        <p class="small text-dark mb-0">Add more color options in themes</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <a href="mailbox.html" class="btn btn-secondary pmd-ripple-effect pmd-btn-flat view-all">View
+                            All</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Notification Dropdown -->
+            <div class="nav-item dropdown pmd-dropdown d-inline-block">
+                <a class="btn btn-sm pmd-btn-fab pmd-btn-flat" href="javascript:void(0);" id="notificationDropdown"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Notifications">
+                    <i data-badge="3"
+                        class="material-icons pmd-badge pmd-badge-overlap pmd-badge-secondary md-dark md-inactive pmd-sm">notifications_none</i>
+                </a>
+                 <div class="dropdown-menu dropdown-menu-right notifications-dropdown"
+                    aria-labelledby="notificationDropdown">
+                    <div class="card pmd-card mb-0">
+                        <div class="card-header d-flex w-100 justify-content-between pmd-card-border">
+                            <h3 class="pmd-list-title mb-0">Notifications</h3>
+                            <a href="javascript:void(0);" class="text-secondary small">2 New Notifications</a>
+                        </div>
+                        <div class="list-group pmd-list pmd-list-border m-0">
+                            <a class="list-group-item d-block unread" href="javascript:void(0);">
+                                <div class="media">
+                                    <span class="pmd-avatar-list-img">
+                                        <img alt="Profile Picture" data-src="holder.js/40x40" class="img-fluid"
+                                            src="assets/images/profile-1.jpg" data-holder-rendered="true">
+                                    </span>
+                                    <div class="media-body">
+                                        <h5 class="pmd-list-title"><strong>Robert Oliver</strong> applied for appointment on 10<sup>th</sup> May 2019 11:00AM.</h5>
+                                        <p class="small text-dark mb-0">5 Minutes ago</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="list-group-item d-block unread" href="javascript:void(0);">
+                                <div class="media">
+                                    <span class="pmd-avatar-list-img">
+                                        <img alt="Profile Picture" data-src="holder.js/40x40" class="img-fluid"
+                                            src="assets/images/profile-2.jpg" data-holder-rendered="true">
+                                    </span>
+                                    <div class="media-body">
+                                        <h5 class="pmd-list-title"><strong>Andrea Cole</strong> discharged from treatment yesterday.</h5>
+                                        <p class="small text-dark mb-0">15 Minutes ago</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="list-group-item d-block" href="javascript:void(0);">
+                                <div class="media">
+                                    <span class="pmd-avatar-list-img">
+                                        <img alt="Profile Picture" data-src="holder.js/40x40" class="img-fluid"
+                                            src="assets/images/profile-3.jpg" data-holder-rendered="true">
+                                    </span>
+                                    <div class="media-body">
+                                        <h5 class="pmd-list-title"><strong>Scott Mason</strong> applied for appointment on 13<sup>th</sup> May 2019 12:00PM.</h5>
+                                        <p class="small text-dark mb-0">25 Minutes ago</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="list-group-item d-block" href="javascript:void(0);">
+                                <div class="media">
+                                    <span class="pmd-avatar-list-img">
+                                        <img alt="Profile Picture" data-src="holder.js/40x40" class="img-fluid"
+                                            src="assets/images/profile-4.jpg" data-holder-rendered="true">
+                                    </span>
+                                    <div class="media-body">
+                                        <h5 class="pmd-list-title"><strong>Frank Thomas</strong> admitted for operation in ward no. 21.
+                                        </h5>
+                                        <p class="small text-dark mb-0">15 Minutes ago</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="list-group-item d-block" href="javascript:void(0);">
+                                <div class="media">
+                                    <span class="pmd-avatar-list-img">
+                                        <img alt="Profile Picture" data-src="holder.js/40x40" class="img-fluid"
+                                            src="assets/images/profile-5.jpg" data-holder-rendered="true">
+                                    </span>
+                                    <div class="media-body">
+                                        <h5 class="pmd-list-title"><strong>Mary Chavez</strong> came for routine checkup.
+                                        </h5>
+                                        <p class="small text-dark mb-0">15 Minutes ago</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="list-group-item d-block" href="javascript:void(0);">
+                                <div class="media">
+                                    <span class="pmd-avatar-list-img">
+                                        <img alt="Profile Picture" data-src="holder.js/40x40" class="img-fluid"
+                                            src="assets/images/profile-6.jpg" data-holder-rendered="true">
+                                    </span>
+                                    <div class="media-body">
+                                        <h5 class="pmd-list-title"><strong>Tyler Wood</strong> joined in Cardiology Department.</h5>
+                                        <p class="small text-dark mb-0">25 Minutes ago</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="list-group-item d-block" href="javascript:void(0);">
+                                <div class="media">
+                                    <span class="pmd-avatar-list-img">
+                                        <img alt="Profile Picture" data-src="holder.js/40x40" class="img-fluid"
+                                            src="assets/images/profile-7.jpg" data-holder-rendered="true">
+                                    </span>
+                                    <div class="media-body">
+                                        <h5 class="pmd-list-title"><strong>Ruth Fields</strong> applied for appointment on 12<sup>th</sup> May 2019 4:00PM.</h5>
+                                        <p class="small text-dark mb-0">15 Minutes ago</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="list-group-item d-block" href="javascript:void(0);">
+                                <div class="media">
+                                    <span class="pmd-avatar-list-img">
+                                        <img alt="Profile Picture" data-src="holder.js/40x40" class="img-fluid"
+                                            src="assets/images/profile-8.jpg" data-holder-rendered="true">
+                                    </span>
+                                    <div class="media-body">
+                                        <h5 class="pmd-list-title"><strong>Martha Jhon</strong> applied for appointment on 10<sup>th</sup> May2019 12:00PM.</h5>
+                                        <p class="small text-dark mb-0">15 Minutes ago</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <a href="notifications.html"
+                            class="btn btn-secondary pmd-ripple-effect pmd-btn-flat view-all">View
+                            All</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- User Info Dropdown  -->
+            <div class="nav-item dropdown pmd-dropdown d-none d-md-inline-block">
+                <a class="btn btn-sm pmd-btn-flat" href="javascript:void(0);" id="userProfileDropdown"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <div class="media align-items-center">
+                        <div class="media-left">
+                            <img src="assets/images/profile-1.jpg" alt="Admin Picture"
+                                class="pmd-icon-circle pmd-icon-xs mr-2">
+                        </div>
+                        <div class="media-body">
+                            <b class="d-inline-flex mr-2 text-dark">Admin</b>
+                        </div>
+                        <div class="media-right">
+                            <i class="material-icons md-18 md-inactive md-dark">expand_more</i>
+                        </div>
+                    </div>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right notifications-dropdown user-profile-dropdown"
+                    aria-labelledby="userProfileDropdown">
+                    <div class="card pmd-card mb-0">
+                        <div class="list-group pmd-list pmd-list-border m-0">
+
+                            <a class="d-flex flex-row list-group-item text-dark" href="settings.html">
+                                <i class="material-icons pmd-xs mr-2">settings</i>
+                                <span class="media-body align-self-center">Settings</span>
+                            </a>
+
+                            <a class="d-flex flex-row list-group-item text-dark" href="faqs.html">
+                                <i class="material-icons pmd-xs mr-2">help</i>
+                                <span class="media-body align-self-center">FAQs</span>
+                            </a>
+                            <a class="d-flex flex-row list-group-item text-danger" href="login.html">
+                                <i class="material-icons pmd-xs mr-2">logout</i>
+                                <span class="media-body align-self-center">Logout</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Right Side Menu -->
+        
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Sidebar overlay -->
+    <div class="pmd-sidebar-overlay"></div>
+
+    <!----------------------------
+		Left Sidebar
+ 	----------------------------->
+    <aside id="basicSidebar"
+        class="pmd-sidebar pmd-sidebar-dark bg-primary pmd-sidebar-slide-push pmd-sidebar-open  pmd-z-depth-light-2"
+        role="navigation">
+        <div class="navbar-header fixed-top">
+            <!-- Navbar Logo for Desktop view -->
+            <a class="navbar-brand navbar-custom-brand d-none d-md-block" href="dashboard.html">
+                <img src="assets/images/logo-white.png" alt="Logo" class="img-fluid" width="172">
+            </a>
+            <!-- User Info For Responsive View -->
+            <div class="pmd-user-info d-block d-md-none text-center">
+                <a href="javascript:void(0);" class="btn-user">
+                    <img class="rounded-circle" src="assets/images/profile-1.jpg" width="56" height="56" alt="avatar">
+                    <h3 class="pmd-title m-0 text-white">Admin</h3>
+                </a>
+            </div>
+        </div>
+
+        <!-- Accordian Menu -->
+        <ul class="nav flex-column pmd-sidebar-nav">
+            <li class="nav-item ">
+                <a class="nav-link pmd-ripple-effect" href="dashboard.html">
+                    <i class="material-icons pmd-list-icon pmd-sm md-light">home</i>
+                    <span class="media-body">Dashboard</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="collapse" href="#department-menu">
+                    <i class="material-icons pmd-list-icon pmd-sm md-light">location_city</i>
+                    <span class="media-body">Departments</span>
+                    <div class="media-right media-bottom">
+                        <i class="material-icons md-18 pmd-accordion-arrow">expand_more</i>
+                    </div>
+                </a>
+                <!-- Submenu -->
+                <ul class="collapse show" id="department-menu" data-parent="#basicSidebar" aria-expanded="false">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="department-list.html">Department Types</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="department-detail.html">Department Details</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="department-blank-state.html">Department Blank State</a>
+                    </li>
+                </ul>
+                <!-- End Submenu -->
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" data-toggle="collapse" href="#doctor-menu">
+                    <i class="material-icons pmd-list-icon pmd-sm md-light">enhanced_encryption</i>
+                    <span class="media-body">Doctors</span>
+                    <div class="media-right media-bottom">
+                        <i class="material-icons md-18 pmd-accordion-arrow">expand_more</i>
+                    </div>
+                </a>
+                <!-- Submenu -->
+                <ul class="collapse" id="doctor-menu" data-parent="#basicSidebar" aria-expanded="false">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="doctor-list.html">Doctor List</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="doctor-add.html">Add Doctor</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="doctor-detail.html">Doctor Detail</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="doctor-blank-state.html">Doctor Blank State</a>
+                    </li>
+                </ul>
+                <!-- End Submenu -->
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" data-toggle="collapse" href="#patient-menu">
+                    <i class="material-icons pmd-list-icon pmd-sm md-light">airline_seat_recline_normal</i>
+                    <span class="media-body">Patients</span>
+                    <div class="media-right media-bottom">
+                        <i class="material-icons md-18 pmd-accordion-arrow">expand_more</i>
+                    </div>
+                </a>
+                <!-- Submenu -->
+                <ul class="collapse" id="patient-menu" data-parent="#basicSidebar" aria-expanded="false">
+                    <li class="nav-item">
+                        <a class="nav-link" href="patient-list.html">Patient List</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="patient-add.html">Add Patient</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="patient-detail.html">Patient Detail</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="patient-blank-state.html">Patient Blank State</a>
+                    </li>
+                </ul>
+                <!-- End Submenu -->
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" data-toggle="collapse" href="#schedule-menu">
+                    <i class="material-icons pmd-list-icon pmd-sm md-light">event</i>
+                    <span class="media-body">Appointments</span>
+                    <div class="media-right media-bottom">
+                        <i class="material-icons md-18 pmd-accordion-arrow">expand_more</i>
+                    </div>
+                </a>
+                <!-- Submenu -->
+                <ul class="collapse" id="schedule-menu" data-parent="#basicSidebar">
+                    <li class="nav-item">
+                        <a class="nav-link" href="appointment-add.html">Add Appointment</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="appointment-list.html">Appointment List</a>
+                    </li>
+                </ul>
+                <!-- End Submenu -->
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" data-toggle="collapse" href="#login-menu">
+                    <i class="material-icons pmd-list-icon pmd-sm md-light">exit_to_app</i>
+                    <span class="media-body">Login</span>
+                    <div class="media-right media-bottom">
+                        <i class="material-icons md-18 pmd-accordion-arrow">expand_more</i>
+                    </div>
+                </a>
+                <!-- Submenu -->
+                <ul class="collapse" id="login-menu" data-parent="#basicSidebar">
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login Option 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login2.html">Login Option 2</a>
+                    </li>
+                </ul>
+                <!-- End Submenu -->
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="notifications.html">
+                    <i class="material-icons pmd-list-icon pmd-sm md-light">notifications</i>
+                    <span class="media-body">Notifications</span>
+                </a>
+            </li>
+
+            <li class="nav-item ">
+                <a class="nav-link" href="mailbox.html">
+                    <i class="material-icons pmd-list-icon pmd-sm md-light">email</i>
+                    <span class="media-body">Mailbox</span>
+                </a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="email-templates.html">
+                    <i class="material-icons pmd-list-icon pmd-sm md-light">web</i>
+                    <span class="media-body">Email Templates</span>
+                </a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="calendar.html">
+                    <i class="material-icons pmd-list-icon pmd-sm md-light">calendar_today</i>
+                    <span class="media-body">Calendar</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" data-toggle="collapse" href="#thirdpartyelements">
+                    <i class="material-icons pmd-list-icon pmd-sm">pages</i>
+                    <span class="media-body">Other Pages</span>
+                    <div class="media-right media-bottom">
+                        <i class="material-icons md-18 pmd-accordion-arrow">expand_more</i>
+                    </div>
+                </a>
+                <!-- Submenu -->
+                <ul class="collapse" id="thirdpartyelements" data-parent="#basicSidebar">
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="typography.html">Typography</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="iconography.html">Iconography</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="search-results.html">Search Results</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="search-no-results-found.html">Search No Results Found</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="alert.html">Alerts and Warnings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="404.html">404</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="404-with-sidebar.html">404 with Sidebar</a>
+                    </li>
+                </ul>
+                <!-- End Submenu -->
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="settings.html">
+                    <i class="material-icons pmd-list-icon pmd-sm md-light">settings</i>
+                    <span class="media-body">Settings</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="faqs.html">
+                    <i class="material-icons pmd-list-icon pmd-sm md-light">help</i>
+                    <span class="media-body">FAQs</span>
+                </a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link pmd-ripple-effect" href="login.html">
+                    <i class="material-icons pmd-list-icon pmd-sm md-light">logout</i>
+                    <span class="media-body">Log Out</span>
+                </a>
+            </li>
+        </ul>
+        <!-- End Accordian Menu -->
+
+    </aside>
+    <!-- End Left Sidebar -->
+
+    <!----------------------------
+		Content Area
+ 	----------------------------->
+    <div id="content" class="pmd-content content-area">
+        <div class="d-flex align-items-center">
+            <div class="">
+                <!-- Page Title -->
+                <h1 class="h2 hide-large-desk">Departments</h1>
+
+                <!-- Breadcrumb -->
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb pmd-breadcrumb ">
+                        <li class="breadcrumb-item">
+                            <a href="dashboard.html">Dashboard</a>
+                        </li>
+                        <li class="breadcrumb-item active" aria-current="page">Departments</li>
+                    </ol>
+                </nav>
+                <!-- End Breadcrumb -->
+            </div>
+            <div class="ml-auto">
+                <ul class="nav nav-tabs border-0 mb-3">
+                    <li class="nav-item mr-2">
+                        <a title="Grid View" class="btn pmd-btn-fab pmd-ripple-effect nav-link btn-sm btn-outline-dark"
+                            href="#gridView" aria-controls="gridView" role="tab" data-toggle="tab">
+                            <i class="material-icons">apps</i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a title="List View"
+                            class="btn btn-outline-dark pmd-btn-fab pmd-ripple-effect nav-link btn-sm active"
+                            href="#listView" aria-controls="listView" role="tab" data-toggle="tab">
+                            <i class="material-icons">format_list_bulleted</i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="tab-content">
+            <!-- Grid View -->
+            <div role="tabpanel" class="tab-pane" id="gridView">
+                <div class="row">
+                    <!-- Card View -->
+                    <div class="col-md-6 col-xl-4 col-12 d-flex">
+                        <div class="card pmd-card user-info-card">
+                            <!-- Card Header -->
+                            <div class="card-header pmd-card-border media align-items-center">
+                                <a class="pmd-avatar-list-img" href="department-detail.html">
+                                    <img src="assets/images/department-img-1.jpg" width="40" height="40"
+                                        class="img-fluid" alt="Profile Picture">
+                                </a>
+                                <div class="media-body">
+                                    <h3 class="card-title">Dentists</h3>
+                                </div>
+                                <div class="media-action-btns">
+                                    <a href="department-detail.html" title="Edit"
+                                        class="btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm">
+                                        <i class="material-icons">edit</i>
+                                    </a>
+                                    <a href="javascript:void(0);" title="Delete"
+                                        class="btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm"
+                                        data-target="#delete_department_modal" data-toggle="modal">
+                                        <i class="material-icons">delete_outline</i>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Card Body Content -->
+                            <ul class="list-group pmd-card-list pmd-list row flex-row mx-0">
+                                <li class="list-group-item col-md-6">
+                                    <label class="pmd-list-subtitle mb-1">No. Of Doctors</label>
+                                    <h5 class="pmd-list-title">50</h5>
+                                </li>
+                                <li class="list-group-item col-md-6">
+                                    <label class="pmd-list-subtitle mb-1 d-block">Status</label>
+                                    <span class="badge badge-pill pmd-badge-outline-success">Active</span>
+                                </li>
+                                <li class="list-group-item col-md-12">
+                                    <label class="pmd-list-subtitle mb-1">Description</label>
+                                    <p class="mb-0">It represents one of the largest and most modern cardiac care
+                                        facilities which are affordable and available to one and all.</p>
+                                </li>
+                            </ul>
+                            <!-- Card Footer -->
+                            <div class="card-footer pmd-card-border">
+                                <a href="department-detail.html"
+                                    class="btn btn-primary pmd-ripple-effect pmd-btn-flat">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Card View -->
+
+                    <!-- Card View -->
+                    <div class="col-md-6 col-xl-4 col-12 d-flex">
+                        <div class="card pmd-card user-info-card">
+                            <!-- Card Header -->
+                            <div class="card-header pmd-card-border media align-items-center">
+                                <a class="pmd-avatar-list-img" href="department-detail.html">
+                                    <img src="assets/images/department-img-2.jpg" width="40" height="40"
+                                        class="img-fluid" alt="Profile Picture">
+                                </a>
+                                <div class="media-body">
+                                    <h3 class="card-title">Cardiology</h3>
+                                </div>
+                                <div class="media-action-btns">
+                                    <a href="department-detail.html" title="Edit"
+                                        class="btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm">
+                                        <i class="material-icons">edit</i>
+                                    </a>
+                                    <a href="javascript:void(0);" title="Delete"
+                                        class="btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm"
+                                        data-target="#delete_department_modal" data-toggle="modal">
+                                        <i class="material-icons">delete_outline</i>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Card Body Content -->
+                            <ul class="list-group pmd-card-list pmd-list row flex-row mx-0">
+                                <li class="list-group-item col-md-6">
+                                    <label class="pmd-list-subtitle mb-1">No. Of Doctors</label>
+                                    <h5 class="pmd-list-title">50</h5>
+                                </li>
+                                <li class="list-group-item col-md-6">
+                                    <label class="pmd-list-subtitle mb-1 d-block">Status</label>
+                                    <span class="badge badge-pill pmd-badge-outline-light">Inactive</span>
+                                </li>
+                                <li class="list-group-item col-md-12">
+                                    <label class="pmd-list-subtitle mb-1">Description</label>
+                                    <p class="mb-0">It represents one of the largest and most modern cardiac care
+                                        facilities which are affordable and available to one and all.</p>
+                                </li>
+                            </ul>
+                            <!-- Card Footer -->
+                            <div class="card-footer pmd-card-border">
+                                <a href="department-detail.html"
+                                    class="btn btn-primary pmd-ripple-effect pmd-btn-flat">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Card View -->
+
+                    <!-- Card View -->
+                    <div class="col-md-6 col-xl-4 col-12 d-flex">
+                        <div class="card pmd-card user-info-card">
+                            <!-- Card Header -->
+                            <div class="card-header pmd-card-border media align-items-center">
+                                <a class="pmd-avatar-list-img" href="department-detail.html">
+                                    <img src="assets/images/department-img-3.jpg" width="40" height="40"
+                                        class="img-fluid" alt="Profile Picture">
+                                </a>
+                                <div class="media-body">
+                                    <h3 class="card-title">Endoscopy</h3>
+                                </div>
+                                <div class="media-action-btns">
+                                    <a href="department-detail.html" title="Edit"
+                                        class="btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm">
+                                        <i class="material-icons">edit</i>
+                                    </a>
+                                    <a href="javascript:void(0);" title="Delete"
+                                        class="btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm"
+                                        data-target="#delete_department_modal" data-toggle="modal">
+                                        <i class="material-icons">delete_outline</i>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Card Body Content -->
+                            <ul class="list-group pmd-card-list pmd-list row flex-row mx-0">
+                                <li class="list-group-item col-md-6">
+                                    <label class="pmd-list-subtitle mb-1">No. Of Doctors</label>
+                                    <h5 class="pmd-list-title">50</h5>
+                                </li>
+                                <li class="list-group-item col-md-6">
+                                    <label class="pmd-list-subtitle mb-1 d-block">Status</label>
+                                    <span class="badge badge-pill pmd-badge-outline-success">Active</span>
+                                </li>
+                                <li class="list-group-item col-md-12">
+                                    <label class="pmd-list-subtitle mb-1">Description</label>
+                                    <p class="mb-0">It represents one of the largest and most modern cardiac care
+                                        facilities which are affordable and available to one and all.</p>
+                                </li>
+                            </ul>
+                            <!-- Card Footer -->
+                            <div class="card-footer pmd-card-border">
+                                <a href="department-detail.html"
+                                    class="btn btn-primary pmd-ripple-effect pmd-btn-flat">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Card View -->
+
+                    <!-- Card View -->
+                    <div class="col-md-6 col-xl-4 col-12 d-flex">
+                        <div class="card pmd-card user-info-card">
+                            <!-- Card Header -->
+                            <div class="card-header pmd-card-border media align-items-center">
+                                <a class="pmd-avatar-list-img" href="department-detail.html">
+                                    <img src="assets/images/department-img-4.jpg" width="40" height="40"
+                                        class="img-fluid" alt="Profile Picture">
+                                </a>
+                                <div class="media-body">
+                                    <h3 class="card-title">Surgery</h3>
+                                </div>
+                                <div class="media-action-btns">
+                                    <a href="department-detail.html" title="Edit"
+                                        class="btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm">
+                                        <i class="material-icons">edit</i>
+                                    </a>
+                                    <a href="javascript:void(0);" title="Delete"
+                                        class="btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm"
+                                        data-target="#delete_department_modal" data-toggle="modal">
+                                        <i class="material-icons">delete_outline</i>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Card Body Content -->
+                            <ul class="list-group pmd-card-list pmd-list row flex-row mx-0">
+                                <li class="list-group-item col-md-6">
+                                    <label class="pmd-list-subtitle mb-1">No. Of Doctors</label>
+                                    <h5 class="pmd-list-title">50</h5>
+                                </li>
+                                <li class="list-group-item col-md-6">
+                                    <label class="pmd-list-subtitle mb-1 d-block">Status</label>
+                                    <span class="badge badge-pill pmd-badge-outline-success">Active</span>
+                                </li>
+                                <li class="list-group-item col-md-12">
+                                    <label class="pmd-list-subtitle mb-1">Description</label>
+                                    <p class="mb-0">It represents one of the largest and most modern cardiac care
+                                        facilities which are affordable and available to one and all.</p>
+                                </li>
+                            </ul>
+                            <!-- Card Footer -->
+                            <div class="card-footer pmd-card-border">
+                                <a href="department-detail.html"
+                                    class="btn btn-primary pmd-ripple-effect pmd-btn-flat">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Card View -->
+
+                    <!-- Card View -->
+                    <div class="col-md-6 col-xl-4 col-12 d-flex">
+                        <div class="card pmd-card user-info-card">
+                            <!-- Card Header -->
+                            <div class="card-header pmd-card-border media flex-row align-items-center">
+                                <a class="pmd-avatar-list-img" href="department-detail.html">
+                                    <img src="assets/images/department-img-5.jpg" width="40" height="40"
+                                        class="img-fluid" alt="Profile Picture">
+                                </a>
+                                <div class="media-body">
+                                    <h3 class="card-title">Neurology</h3>
+                                </div>
+                                <div class="media-action-btns">
+                                    <a href="department-detail.html" title="Edit"
+                                        class="btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm">
+                                        <i class="material-icons">edit</i>
+                                    </a>
+                                    <a href="javascript:void(0);" title="Delete"
+                                        class="btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm"
+                                        data-target="#delete_department_modal" data-toggle="modal">
+                                        <i class="material-icons">delete_outline</i>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Card Body Content -->
+                            <ul class="list-group pmd-card-list pmd-list row flex-row mx-0">
+                                <li class="list-group-item col-md-6">
+                                    <label class="pmd-list-subtitle mb-1">No. Of Doctors</label>
+                                    <h5 class="pmd-list-title">50</h5>
+                                </li>
+                                <li class="list-group-item col-md-6">
+                                    <label class="pmd-list-subtitle mb-1 d-block">Status</label>
+                                    <span class="badge badge-pill pmd-badge-outline-success">Active</span>
+                                </li>
+                                <li class="list-group-item col-md-12">
+                                    <label class="pmd-list-subtitle mb-1">Description</label>
+                                    <p class="mb-0">It represents one of the largest and most modern cardiac care
+                                        facilities which are affordable and available to one and all.</p>
+                                </li>
+                            </ul>
+                            <!-- Card Footer -->
+                            <div class="card-footer pmd-card-border">
+                                <a href="department-detail.html"
+                                    class="btn btn-primary pmd-ripple-effect pmd-btn-flat">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Card View -->
+
+                    <!-- Card View -->
+                    <div class="col-md-6 col-xl-4 col-12 d-flex">
+                        <div class="card pmd-card user-info-card">
+                            <!-- Card Header -->
+                            <div class="card-header pmd-card-border media align-items-center">
+                                <a class="pmd-avatar-list-img" href="department-detail.html">
+                                    <img src="assets/images/department-img-6.jpg" width="40" height="40"
+                                        class="img-fluid" alt="Profile Picture">
+                                </a>
+                                <div class="media-body">
+                                    <h3 class="card-title">Burn Center</h3>
+                                </div>
+                                <div class="media-action-btns">
+                                    <a href="department-detail.html" title="Edit"
+                                        class="btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm">
+                                        <i class="material-icons">edit</i>
+                                    </a>
+                                    <a href="javascript:void(0);" title="Delete"
+                                        class="btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm"
+                                        data-target="#delete_department_modal" data-toggle="modal">
+                                        <i class="material-icons">delete_outline</i>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Card Body Content -->
+                            <ul class="list-group pmd-card-list pmd-list row flex-row mx-0">
+                                <li class="list-group-item col-md-6">
+                                    <label class="pmd-list-subtitle mb-1">No. Of Doctors</label>
+                                    <h5 class="pmd-list-title">20</h5>
+                                </li>
+                                <li class="list-group-item col-md-6">
+                                    <label class="pmd-list-subtitle mb-1 d-block">Status</label>
+                                    <span class="badge badge-pill pmd-badge-outline-light">Inactive</span>
+                                </li>
+                                <li class="list-group-item col-md-12">
+                                    <label class="pmd-list-subtitle mb-1">Description</label>
+                                    <p class="mb-0">It represents one of the largest and most modern cardiac care
+                                        facilities which are affordable and available to one and all.</p>
+                                </li>
+                            </ul>
+                            <!-- Card Footer -->
+                            <div class="card-footer pmd-card-border">
+                                <a href="department-detail.html"
+                                    class="btn btn-primary pmd-ripple-effect pmd-btn-flat">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Card View -->
+
+                    <div class="col-12 text-center">
+                        <button class="btn btn-secondary pmd-ripple-effect">Load More</button>
+                    </div>
+                </div>
+            </div>
+            <!-- End Grid View -->
+
+            <!-- List View -->
+            <div role="tabpanel" class="tab-pane active show" id="listView">
+
+                <!-- Data Table -->
+                <div class="card pmd-card pmd-data-table">
+                    <table id="department-datatable" class="table pmd-table table-hover display dt-responsive nowrap"
+                        cellspacing="0" width="100%">
+                        <!-- Table Heading -->
+                        <thead class="">
+                            <tr>
+                                <th class="select-all"></th>
+                                <th>No</th>
+                                <th>Department Name</th>
+                                <th>No. of Doctors</th>
+                                <th>Status</th>
+                                <th></th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <!-- Table Body Content -->
+                        <tbody>
+                            <tr>
+                                <td></td>
+                                <td data-title="No">1</td>
+                                <td data-title="Department Name">Dentists</td>
+                                <td data-title="No. of Doctors">50</td>
+                                <td data-title="Status">
+                                    <span class="badge badge-pill pmd-badge-outline-success">Active</span>
+                                </td>
+                                <td class=""></td>
+                                <td data-title="Actions">
+                                    <a href="department-detail.html"
+                                        class="btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm mr-2"
+                                        title="Department Details">
+                                        <i class="material-icons pmd-icon-sm">visibility</i>
+                                    </a>
+                                    <a href="department-detail.html"
+                                        class="btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm mr-2"
+                                        title="Edit Department">
+                                        <i class="material-icons pmd-icon-sm">edit</i>
+                                    </a>
+                                    <a href="javascript:void(0);"
+                                        class="btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm"
+                                        data-target="#delete_department_modal" data-toggle="modal"
+                                        title="Delete Department">
+                                        <i class="material-icons pmd-icon-sm">delete_outline</i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td data-title="No">2</td>
+                                <td data-title="Department Name">Cardiology</td>
+                                <td data-title="No. of Doctors">10</td>
+                                <td data-title="Status">
+                                    <span class="badge badge-pill pmd-badge-outline-light">Inactive</span>
+                                </td>
+                                <td class=""></td>
+                                <td data-title="Actions">
+                                    <a href="department-detail.html"
+                                        class="btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm mr-2"
+                                        title="Department Details">
+                                        <i class="material-icons pmd-icon-sm">visibility</i>
+                                    </a>
+                                    <a href="department-detail.html"
+                                        class="btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm mr-2"
+                                        title="Edit Department">
+                                        <i class="material-icons pmd-icon-sm">edit</i>
+                                    </a>
+                                    <a href="javascript:void(0);"
+                                        class="btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm"
+                                        data-target="#delete_department_modal" data-toggle="modal"
+                                        title="Delete Department">
+                                        <i class="material-icons pmd-icon-sm">delete_outline</i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td data-title="No">3</td>
+                                <td data-title="Department Name">Endoscopy</td>
+                                <td data-title="No. of Doctors">20</td>
+                                <td data-title="Status">
+                                    <span class="badge badge-pill pmd-badge-outline-success">Active</span>
+                                </td>
+                                <td class=""></td>
+                                <td data-title="Actions">
+                                    <a href="department-detail.html"
+                                        class="btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm mr-2"
+                                        title="Department Details">
+                                        <i class="material-icons pmd-icon-sm">visibility</i>
+                                    </a>
+                                    <a href="department-detail.html"
+                                        class="btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm mr-2"
+                                        title="Edit Department">
+                                        <i class="material-icons pmd-icon-sm">edit</i>
+                                    </a>
+                                    <a href="javascript:void(0);"
+                                        class="btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm"
+                                        data-target="#delete_department_modal" data-toggle="modal"
+                                        title="Delete Department">
+                                        <i class="material-icons pmd-icon-sm">delete_outline</i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td data-title="No">4</td>
+                                <td data-title="Department Name">General surgery</td>
+                                <td data-title="No. of Doctors">50</td>
+                                <td data-title="Status">
+                                    <span class="badge badge-pill pmd-badge-outline-success">Active</span>
+                                </td>
+                                <td class=""></td>
+                                <td data-title="Actions">
+                                    <a href="department-detail.html"
+                                        class="btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm mr-2"
+                                        title="Department Details">
+                                        <i class="material-icons pmd-icon-sm">visibility</i>
+                                    </a>
+                                    <a href="department-detail.html"
+                                        class="btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm mr-2"
+                                        title="Edit Department">
+                                        <i class="material-icons pmd-icon-sm">edit</i>
+                                    </a>
+                                    <a href="javascript:void(0);"
+                                        class="btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm"
+                                        data-target="#delete_department_modal" data-toggle="modal"
+                                        title="Delete Department">
+                                        <i class="material-icons pmd-icon-sm">delete_outline</i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td data-title="No">5</td>
+                                <td data-title="Department Name">Gynaecology</td>
+                                <td data-title="No. of Doctors">50</td>
+                                <td data-title="Status">
+                                    <span class="badge badge-pill pmd-badge-outline-light">Inactive</span>
+                                </td>
+                                <td class=""></td>
+                                <td data-title="Actions">
+                                    <a href="department-detail.html"
+                                        class="btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm mr-2"
+                                        title="Department Details">
+                                        <i class="material-icons pmd-icon-sm">visibility</i>
+                                    </a>
+                                    <a href="department-detail.html"
+                                        class="btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm mr-2"
+                                        title="Edit Department">
+                                        <i class="material-icons pmd-icon-sm">edit</i>
+                                    </a>
+                                    <a href="javascript:void(0);"
+                                        class="btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm"
+                                        data-target="#delete_department_modal" data-toggle="modal"
+                                        title="Delete Department">
+                                        <i class="material-icons pmd-icon-sm">delete_outline</i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td data-title="No">6</td>
+                                <td data-title="Department Name">ENT Department</td>
+                                <td data-title="No. of Doctors">50</td>
+                                <td data-title="Status">
+                                    <span class="badge badge-pill pmd-badge-outline-success">Active</span>
+                                </td>
+                                <td class=""></td>
+                                <td data-title="Actions">
+                                    <a href="department-detail.html"
+                                        class="btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm mr-2"
+                                        title="Department Details">
+                                        <i class="material-icons pmd-icon-sm">visibility</i>
+                                    </a>
+                                    <a href="department-detail.html"
+                                        class="btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm mr-2"
+                                        title="Edit Department">
+                                        <i class="material-icons pmd-icon-sm">edit</i>
+                                    </a>
+                                    <a href="javascript:void(0);"
+                                        class="btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm"
+                                        data-target="#delete_department_modal" data-toggle="modal"
+                                        title="Delete Department">
+                                        <i class="material-icons pmd-icon-sm">delete_outline</i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td data-title="No">7</td>
+                                <td data-title="Department Name">Cancer Department</td>
+                                <td data-title="No. of Doctors">50</td>
+                                <td data-title="Status">
+                                    <span class="badge badge-pill pmd-badge-outline-success">Active</span>
+                                </td>
+                                <td class=""></td>
+                                <td data-title="Actions">
+                                    <a href="department-detail.html"
+                                        class="btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm mr-2"
+                                        title="Department Details">
+                                        <i class="material-icons pmd-icon-sm">visibility</i>
+                                    </a>
+                                    <a href="department-detail.html"
+                                        class="btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm mr-2"
+                                        title="Edit Department">
+                                        <i class="material-icons pmd-icon-sm">edit</i>
+                                    </a>
+                                    <a href="javascript:void(0);"
+                                        class="btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm"
+                                        data-target="#delete_department_modal" data-toggle="modal"
+                                        title="Delete Department">
+                                        <i class="material-icons pmd-icon-sm">delete_outline</i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td data-title="No">8</td>
+                                <td data-title="Department Name">Orthopaedic</td>
+                                <td data-title="No. of Doctors">50</td>
+                                <td data-title="Status">
+                                    <span class="badge badge-pill pmd-badge-outline-success">Active</span>
+                                </td>
+                                <td class=""></td>
+                                <td data-title="Actions">
+                                    <a href="department-detail.html"
+                                        class="btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm mr-2"
+                                        title="Department Details">
+                                        <i class="material-icons pmd-icon-sm">visibility</i>
+                                    </a>
+                                    <a href="department-detail.html"
+                                        class="btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm mr-2"
+                                        title="Edit Department">
+                                        <i class="material-icons pmd-icon-sm">edit</i>
+                                    </a>
+                                    <a href="javascript:void(0);"
+                                        class="btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm"
+                                        data-target="#delete_department_modal" data-toggle="modal"
+                                        title="Delete Department">
+                                        <i class="material-icons pmd-icon-sm">delete_outline</i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td data-title="No">9</td>
+                                <td data-title="Department Name">Opthalmology</td>
+                                <td data-title="No. of Doctors">50</td>
+                                <td data-title="Status">
+                                    <span class="badge badge-pill pmd-badge-outline-light">Inactive</span>
+                                </td>
+                                <td class=""></td>
+                                <td data-title="Actions">
+                                    <a href="department-detail.html"
+                                        class="btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm mr-2"
+                                        title="Department Details">
+                                        <i class="material-icons pmd-icon-sm">visibility</i>
+                                    </a>
+                                    <a href="department-detail.html"
+                                        class="btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm mr-2"
+                                        title="Edit Department">
+                                        <i class="material-icons pmd-icon-sm">edit</i>
+                                    </a>
+                                    <a href="javascript:void(0);"
+                                        class="btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm"
+                                        data-target="#delete_department_modal" data-toggle="modal"
+                                        title="Delete Department">
+                                        <i class="material-icons pmd-icon-sm">delete_outline</i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td data-title="No">10</td>
+                                <td data-title="Department Name">Neurology</td>
+                                <td data-title="No. of Doctors">60</td>
+                                <td data-title="Status">
+                                    <span class="badge badge-pill pmd-badge-outline-success">Active</span>
+                                </td>
+                                <td class=""></td>
+                                <td data-title="Actions">
+                                    <a href="department-detail.html"
+                                        class="btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm mr-2"
+                                        title="Department Details">
+                                        <i class="material-icons pmd-icon-sm">visibility</i>
+                                    </a>
+                                    <a href="department-detail.html"
+                                        class="btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm mr-2"
+                                        title="Edit Department">
+                                        <i class="material-icons pmd-icon-sm">edit</i>
+                                    </a>
+                                    <a href="javascript:void(0);"
+                                        class="btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm"
+                                        data-target="#delete_department_modal" data-toggle="modal"
+                                        title="Delete Department">
+                                        <i class="material-icons pmd-icon-sm">delete_outline</i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td data-title="No">11</td>
+                                <td data-title="Department Name">Burn Center</td>
+                                <td data-title="No. of Doctors">60</td>
+                                <td data-title="Status">
+                                    <span class="badge badge-pill pmd-badge-outline-success">Active</span>
+                                </td>
+                                <td class=""></td>
+                                <td data-title="Actions">
+                                    <a href="department-detail.html"
+                                        class="btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm mr-2"
+                                        title="Department Details">
+                                        <i class="material-icons pmd-icon-sm">visibility</i>
+                                    </a>
+                                    <a href="department-detail.html"
+                                        class="btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm mr-2"
+                                        title="Edit Department">
+                                        <i class="material-icons pmd-icon-sm">edit</i>
+                                    </a>
+                                    <a href="javascript:void(0);"
+                                        class="btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm"
+                                        data-target="#delete_department_modal" data-toggle="modal"
+                                        title="Delete Department">
+                                        <i class="material-icons pmd-icon-sm">delete_outline</i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td data-title="No">12</td>
+                                <td data-title="Department Name">Finance Department</td>
+                                <td data-title="No. of Doctors">60</td>
+                                <td data-title="Status">
+                                    <span class="badge badge-pill pmd-badge-outline-success">Active</span>
+                                </td>
+                                <td class=""></td>
+                                <td data-title="Actions">
+                                    <a href="department-detail.html"
+                                        class="btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm mr-2"
+                                        title="Department Details">
+                                        <i class="material-icons pmd-icon-sm">visibility</i>
+                                    </a>
+                                    <a href="department-detail.html"
+                                        class="btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm mr-2"
+                                        title="Edit Department">
+                                        <i class="material-icons pmd-icon-sm">edit</i>
+                                    </a>
+                                    <a href="javascript:void(0);"
+                                        class="btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm"
+                                        data-target="#delete_department_modal" data-toggle="modal"
+                                        title="Delete Department">
+                                        <i class="material-icons pmd-icon-sm">delete_outline</i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td data-title="No">13</td>
+                                <td data-title="Department Name">Health & Safety</td>
+                                <td data-title="No. of Doctors">60</td>
+                                <td data-title="Status">
+                                    <span class="badge badge-pill pmd-badge-outline-success">Active</span>
+                                </td>
+                                <td class=""></td>
+                                <td data-title="Actions">
+                                    <a href="department-detail.html"
+                                        class="btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm mr-2"
+                                        title="Department Details">
+                                        <i class="material-icons pmd-icon-sm">visibility</i>
+                                    </a>
+                                    <a href="department-detail.html"
+                                        class="btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm mr-2"
+                                        title="Edit Department">
+                                        <i class="material-icons pmd-icon-sm">edit</i>
+                                    </a>
+                                    <a href="javascript:void(0);"
+                                        class="btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm"
+                                        data-target="#delete_department_modal" data-toggle="modal"
+                                        title="Delete Department">
+                                        <i class="material-icons pmd-icon-sm">delete_outline</i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td data-title="No">14</td>
+                                <td data-title="Department Name">Haematology</td>
+                                <td data-title="No. of Doctors">60</td>
+                                <td data-title="Status">
+                                    <span class="badge badge-pill pmd-badge-outline-success">Active</span>
+                                </td>
+                                <td class=""></td>
+                                <td data-title="Actions">
+                                    <a href="department-detail.html"
+                                        class="btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm mr-2"
+                                        title="Department Details">
+                                        <i class="material-icons pmd-icon-sm">visibility</i>
+                                    </a>
+                                    <a href="department-detail.html"
+                                        class="btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm mr-2"
+                                        title="Edit Department">
+                                        <i class="material-icons pmd-icon-sm">edit</i>
+                                    </a>
+                                    <a href="javascript:void(0);"
+                                        class="btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm"
+                                        data-target="#delete_department_modal" data-toggle="modal"
+                                        title="Delete Department">
+                                        <i class="material-icons pmd-icon-sm">delete_outline</i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td data-title="No">15</td>
+                                <td data-title="Department Name">Microbiology</td>
+                                <td data-title="No. of Doctors">60</td>
+                                <td data-title="Status">
+                                    <span class="badge badge-pill pmd-badge-outline-success">Active</span>
+                                </td>
+                                <td class=""></td>
+                                <td data-title="Actions">
+                                    <a href="department-detail.html"
+                                        class="btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm mr-2"
+                                        title="Department Details">
+                                        <i class="material-icons pmd-icon-sm">visibility</i>
+                                    </a>
+                                    <a href="department-detail.html"
+                                        class="btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm mr-2"
+                                        title="Edit Department">
+                                        <i class="material-icons pmd-icon-sm">edit</i>
+                                    </a>
+                                    <a href="javascript:void(0);"
+                                        class="btn pmd-btn-fab pmd-btn-flat btn-dark pmd-ripple-effect btn-sm"
+                                        data-target="#delete_department_modal" data-toggle="modal"
+                                        title="Delete Department">
+                                        <i class="material-icons pmd-icon-sm">delete_outline</i>
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- End Data Table -->
+
+            </div>
+            <!-- End List View -->
+        </div>
+    </div>
+    <!-- End Content Area-->
+
+    <!----------------------------
+		Footer 
+ 	----------------------------->
+    <footer class="pmd-footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 align-self-center">
+                    <div class="pmd-site-info">
+                        © <span class="auto-update-year"></span> A <a href="https://pro.propeller.in/"
+                            target="_blank"><strong>Propeller Pro </strong></a> Theme
+                    </div>
+                </div>
+            </div>
+        </div> <!-- End Container -->
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Add Department button -->
+    <div class="menu list-view pmd-floating-action" role="navigation">
+        <a class="pmd-floating-action-btn btn pmd-btn-fab pmd-btn-raised pmd-ripple-effect btn-primary text-white pmd-sidebar-toggle"
+            data-title="Add Department" href="javascript:void(0);" data-target="addSidebar" data-placement="right"
+            data-position='fixed'>
+            <i class="material-icons">add</i>
+        </a>
+    </div>
+    <!-- End Add Department button -->
+
+    <!----------------------------
+		Right Sidebar | Add Department
+ 	----------------------------->
+    <aside id="addSidebar" class="pmd-sidebar bg-white pmd-sidebar-right-fixed pmd-z-depth-light-2 add-sidebar"
+        role="rightSidebar">
+        <div class="card pmd-card">
+            <!-- Card Header -->
+            <div class="card-header pmd-card-border">
+                <h3 class="card-title d-flex justify-content-between">Add Department
+                    <button class="close pmd-sidebar-toggle" data-target="addSidebar" data-position='fixed'
+                        data-placement="right" type="button">
+                        <i class="material-icons">close</i>
+                    </button>
+                </h3>
+            </div>
+            <!-- Card Body | Form Fields -->
+            <form id="" method="post" action="#" class="card-body">
+                <!-- File Upload Field -->
+                <div data-provides="fileinput" class="fileinput file-upload-140 rounded-circle">
+                    <div data-trigger="fileinput" class="fileinput-preview thumbnail img-fluid mb-0">
+                        <img src="assets/images/image-placeholder.jpg" width="140" alt="profile avatar">
+                    </div>
+                    <div class="action-button">
+                        <span class="btn btn-secondary pmd-btn-fab btn-xs pmd-btn-raised btn-file pmd-ripple-effect">
+                            <span class="fileinput-new"><i class="material-icons pmd-xs">add</i></span>
+                            <span class="fileinput-exists"><i class="material-icons pmd-xs">mode_edit</i></span>
+                            <input type="file" name="...">
+                        </span>
+                        <a data-dismiss="fileinput"
+                            class="btn btn-danger btn-xs pmd-btn-fab pmd-ripple-effect pmd-btn-raised btn-file fileinput-exists"
+                            href="javascript:void(0);"><i class="material-icons pmd-xs">close</i></a>
+                    </div>
+                </div>
+                <!-- Text Input Field -->
+                <div class="form-group pmd-textfield pmd-textfield-floating-label pmd-textfield-outline">
+                    <label for="department-name" class="is-invalid">Department Name</label>
+                    <input type="text" class="form-control is-invalid" id="departmentName" name="departmentName"
+                        value="">
+                    <div class="invalid-feedback">Please Enter a Department Name. </div>
+                </div>
+                <!-- Textarea Field -->
+                <div class="form-group pmd-textfield pmd-textfield-floating-label pmd-textfield-outline">
+                    <label>Description</label>
+                    <textarea class="form-control" id="description" name="description"></textarea>
+                </div>
+                <!-- Radio buttons -->
+                <div class="form-group">
+                    <label class="title-label">Active</label>
+                    <div class="custom-control custom-radio pmd-radio custom-control-inline">
+                        <input type="radio" id="addRadioActive" name="addStatus" class="custom-control-input" checked>
+                        <label class="custom-control-label pmd-radio-ripple-effect" for="addRadioActive">Yes</label>
+                    </div>
+                    <div class="custom-control custom-radio pmd-radio custom-control-inline">
+                        <input type="radio" id="addRadioInactive" name="addStatus" class="custom-control-input">
+                        <label class="custom-control-label pmd-radio-ripple-effect" for="addRadioInactive">No</label>
+                    </div>
+                </div>
+                <!-- Form Actions -->
+                <div class="pmd-modal-action">
+                    <a href="javascript:void(0);" data-target="addSidebar" data-position='fixed' data-placement="right"
+                        class="btn pmd-btn-raised d-block btn-primary pmd-ripple-effect mb-2 ml-0 pmd-sidebar-toggle"
+                        title="Add Department">Add
+                        Department</a>
+                    <a href="javascript:void(0);" data-target="addSidebar" data-position='fixed' data-placement="right"
+                        class="m-0 btn d-block btn-outline-secondary pmd-ripple-effect pmd-btn-flat pmd-sidebar-toggle"
+                        title="Cancel">Cancel</a>
+                </div>
+            </form>
+        </div>
+    </aside>
+    <!-- End Right Sidebar | Add Department -->
+
+    <!----------------------------
+		Modal | Delete Department
+ 	----------------------------->
+    <div tabindex="-1" class="modal pmd-modal text-center delete-modal" id="delete_department_modal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header justify-content-center">
+                    <i class="material-icons md-danger-circle pmd-icon-circle pmd-icon-md">
+                        <strong>error_outline</strong>
+                    </i>
+                </div>
+                <!-- Modal Body Content -->
+                <div class="modal-body">
+                    <h3 class="modal-title mb-2">Are you sure?</h3>
+                    <p class="mb-4">Do you really want to delete the department?<br>This action cannot be
+                        undone.</p>
+                    <a href="javascript:void(0);" class="btn pmd-btn-raised btn-danger pmd-ripple-effect mr-2"
+                        title="Delete" data-dismiss="modal">Delete</a>
+                    <a href="javascript:void(0);" class="btn btn-outline-danger pmd-ripple-effect" title="Cancel"
+                        data-dismiss="modal">Cancel</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Modal | Delete Department -->
+
+    <!-- build:include snippets/js-files-department-list-datatable.html -->
+    <!-- /build -->
+
+    <!-- build:remove -->
+    <!--Admin js-->
+    <script type="text/javascript" src="assets/js/ehealthcare-admin-compress.min.js"></script>
+    <!-- /build -->
+
+</body>
+
+
+<!-- Mirrored from themes.propeller.in/bootstrap4/html/e-health-care-admin-theme/department-list.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 14 Aug 2023 07:48:41 GMT -->
+</html>
